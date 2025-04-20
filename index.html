@@ -1,170 +1,66 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CS2 Time Public</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Orbitron', sans-serif;
-      background: radial-gradient(ellipse at bottom, #0a0f2c 0%, #000 100%);
-      color: white;
-      overflow-x: hidden;
-    }
-
-    header {
-      background: rgba(0, 0, 0, 0.7);
-      padding: 20px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 2px solid #00ffe5;
-    }
-
-    .logo {
-      font-size: 28px;
-      color: #00ffe5;
-    }
-
-    nav a {
-      color: white;
-      margin-left: 20px;
-      text-decoration: none;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: #00ffe5;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 100px 20px;
-    }
-
-    .hero h1 {
-      font-size: 60px;
-      color: #00ffe5;
-      margin-bottom: 10px;
-    }
-
-    .hero p {
-      font-size: 20px;
-      margin-bottom: 30px;
-    }
-
-    .btn {
-      padding: 15px 30px;
-      background: #00ffe5;
-      color: #000;
-      border: none;
-      font-size: 16px;
-      border-radius: 10px;
-      text-decoration: none;
-      margin: 10px;
-      transition: transform 0.3s;
-      display: inline-block;
-    }
-
-    .btn:hover {
-      transform: scale(1.1);
-    }
-
-    .section {
-      padding: 60px 20px;
-      text-align: center;
-    }
-
-    .section h2 {
-      color: #00ffe5;
-      margin-bottom: 30px;
-      font-size: 36px;
-    }
-
-    .cards {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-
-    .card {
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid #00ffe5;
-      padding: 20px;
-      border-radius: 15px;
-      width: 250px;
-    }
-
-    .card h3 {
-      color: #00ffe5;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #000;
-      border-top: 1px solid #00ffe5;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Public CS2</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <div class="logo">TIME PUBLIC</div>
-    <nav>
-      <a href="#top">Топ Игроки</a>
-      <a href="#admins">Админы</a>
-      <a href="#connect">Подключиться</a>
-    </nav>
-  </header>
+    <header class="header">
+        <div class="logo">
+            <img src="https://example.com/your-logo.png" alt="Logo" />
+            <h1>Time Public CS2</h1>
+        </div>
+        <nav class="nav">
+            <a href="#about">О сервере</a>
+            <a href="#top-players">Топ игроки</a>
+            <a href="#admins">Админы</a>
+            <a href="#connect">Играть</a>
+        </nav>
+    </header>
 
-  <section class="hero">
-    <h1>CS2 Time Public</h1>
-    <p>Погрузись в космос соревновательного шутера</p>
-    <a href="steam://connect/YOUR_IP_HERE" class="btn">Подключиться</a>
-    <a href="#discord" class="btn">Discord</a>
-  </section>
+    <section class="hero">
+        <h2>Присоединяйся к нам!</h2>
+        <p>Время зажигать — подключайся к серверу</p>
+        <a href="steam://connect/your-server-ip" class="cta-btn">Подключиться</a>
+    </section>
 
-  <section class="section" id="top">
-    <h2>Топ Игроки</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>★ R3x0n</h3>
-        <p>1650 очков</p>
-      </div>
-      <div class="card">
-        <h3>★ NovaZ</h3>
-        <p>1520 очков</p>
-      </div>
-      <div class="card">
-        <h3>★ DarkSoul</h3>
-        <p>1470 очков</p>
-      </div>
-    </div>
-  </section>
+    <section id="about" class="about">
+        <h2>О сервере</h2>
+        <p>Наша цель — создать уникальную атмосферу для каждого игрока! Присоединяйтесь к нашему серверу и наслаждайтесь игрой.</p>
+        <img src="https://example.com/your-image1.jpg" alt="About Image" class="about-img">
+    </section>
 
-  <section class="section" id="admins">
-    <h2>Администрация</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>• ADMIN_1</h3>
-        <p>Гл. Админ</p>
-      </div>
-      <div class="card">
-        <h3>• ADMIN_2</h3>
-        <p>Тех. Поддержка</p>
-      </div>
-      <div class="card">
-        <h3>• ADMIN_3</h3>
-        <p>Модератор</p>
-      </div>
-    </div>
-  </section>
+    <section id="top-players" class="top-players">
+        <h2>Топ игроки</h2>
+        <div class="player-list">
+            <div class="player-card">
+                <img src="https://example.com/player1.jpg" alt="Player 1">
+                <h3>Игрок 1</h3>
+                <p>Очки: 1500</p>
+            </div>
+            <div class="player-card">
+                <img src="https://example.com/player2.jpg" alt="Player 2">
+                <h3>Игрок 2</h3>
+                <p>Очки: 1200</p>
+            </div>
+            <!-- Add more player cards here -->
+        </div>
+    </section>
 
-  <footer>
-    <p>© 2025 Time Public. Все права защищены.</p>
-  </footer>
+    <section id="admins" class="admins">
+        <h2>Админы</h2>
+        <ul>
+            <li>Админ 1</li>
+            <li>Админ 2</li>
+            <!-- Add more admin names here -->
+        </ul>
+    </section>
+
+    <footer>
+        <p>© 2025 Time Public CS2. Все права защищены.</p>
+    </footer>
 </body>
 </html>
