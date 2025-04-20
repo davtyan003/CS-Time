@@ -1,209 +1,89 @@
-/* Основные стили */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Orbitron', sans-serif;
-}
-
 body {
   background-color: #1d1f26;
   color: #ffffff;
-  line-height: 1.6;
-  overflow-x: hidden;
+  font-family: 'Orbitron', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-  position: relative;
-}
-
-/* Фоновая overlay */
-.background-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: -1;
-}
-
-/* Header */
 .top-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
-  border-bottom: 2px solid #ccc;
+  padding: 20px;
+  background-color: #111;
 }
 
 .logo {
-  font-size: 2.5em;
-  font-weight: bold;
+  font-size: 2em;
   color: #00ff00;
-  animation: logo-fade 2s ease-in-out infinite alternate;
-}
-
-@keyframes logo-fade {
-  0% { opacity: 0.7; }
-  100% { opacity: 1; }
 }
 
 .top-nav a {
-  text-decoration: none;
   color: #ffffff;
   margin: 0 15px;
-  font-size: 1.1em;
-  position: relative;
-  transition: color 0.3s;
-}
-
-.top-nav a:hover {
-  color: #00ff00;
-}
-
-.nav-link {
-  padding: 10px 15px;
-  display: inline-block;
+  text-decoration: none;
   position: relative;
 }
 
-.nav-link:after {
+.top-nav a::after {
   content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+  display: block;
+  width: 0;
   height: 2px;
-  background-color: #00ff00;
-  transform: scaleX(0);
-  transform-origin: bottom right;
-  transition: transform 0.3s ease-out;
+  background: #00ff00;
+  transition: width .3s;
 }
 
-.nav-link:hover:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
+.top-nav a:hover::after {
+  width: 100%;
 }
 
-/* Hero Section */
 .hero {
   text-align: center;
-  padding: 100px 0;
-  background: #111;
+  padding: 100px 20px;
+  background-color: #222;
 }
 
 .hero h1 {
   font-size: 3em;
   margin-bottom: 20px;
-  animation: hero-appear 2s ease-in-out;
 }
 
 .hero p {
   font-size: 1.5em;
   margin-bottom: 30px;
-  animation: hero-text 2.5s ease-in-out;
 }
 
-.cta-buttons a {
-  text-decoration: none;
-  color: #ffffff;
-  background: #00ff00;
+.cta-buttons .btn {
+  display: inline-block;
   padding: 15px 30px;
-  font-size: 1.2em;
   margin: 0 10px;
   border-radius: 5px;
+  text-decoration: none;
+  color: #ffffff;
   transition: background 0.3s;
-  display: inline-block;
-  position: relative;
 }
 
-.cta-buttons a:hover {
-  background: #00cc00;
-  animation: button-hover 0.5s ease-in-out;
+.cta-buttons .main {
+  background-color: #00ff00;
+}
+
+.cta-buttons .main:hover {
+  background-color: #00cc00;
 }
 
 .cta-buttons .secondary {
-  background: #333;
+  background-color: #333;
 }
 
 .cta-buttons .secondary:hover {
-  background: #444;
+  background-color: #444;
 }
 
-@keyframes button-hover {
-  0% { transform: scale(1); }
-  100% { transform: scale(1.05); }
-}
-
-/* Секции */
-.section {
-  padding: 60px 0;
-  text-align: center;
-}
-
-.section h2 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-}
-
-.section p {
-  font-size: 1.2em;
-}
-
-.section.dark {
-  background-color: #222;
-}
-
-.section ul {
-  list-style-type: none;
-  text-align: center;
-  font-size: 1.2em;
-}
-
-.section ul li {
-  margin: 10px 0;
-}
-
-/* Кнопки */
-.btn {
-  display: inline-block;
-  text-decoration: none;
-  color: #ffffff;
-  background: #00ff00;
-  padding: 15px 30px;
-  font-size: 1.2em;
-  margin: 0 10px;
-  border-radius: 5px;
-  transition: background 0.3s;
-}
-
-.btn:hover {
-  background: #00cc00;
-}
-
-/* Footer */
 footer {
   text-align: center;
   padding: 20px;
-  background: #111;
+  background-color: #111;
   color: #888;
-}
-
-footer p {
-  font-size: 1em;
-}
-
-/* Анимации */
-@keyframes hero-appear {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-@keyframes hero-text {
-  0% { transform: translateY(20px); opacity: 0; }
-  100% { transform: translateY(0); opacity: 1; }
 }
