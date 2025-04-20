@@ -1,71 +1,1307 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CS2 Time Public</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Игровые сервера в CS2 (CS2): Играй у нас на AWP, PUBLIC, FPS PUBLIC ">
+    <meta property="og:description" content="Игровые сервера в CS2 (CS2): Играй у нас на AWP, PUBLIC, FPS PUBLIC ">
+    <link rel="icon" href="//cs2-moon.ru//favicon.ico" type="image/x-icon">
+    <title>CS2 Серверы - Moon (КС2)</title>
+    <meta property="og:title" content="CS2 Серверы - Moon (КС2)">
+    <meta property="og:title" content="CS2 Серверы - Moon (КС2)">
+    <meta property="og:image" content="//cs2-moon.ru/storage/cache/img/global/bar_logo.jpg">
+    <link rel="image_src" href="//cs2-moon.ru/storage/cache/img/global/bar_logo.jpg">
+    <meta name="twitter:image" content="//cs2-moon.ru/storage/cache/img/global/bar_logo.jpg">
+    <link rel="stylesheet" type="text/css" href="/app/templates/neo/assets/css/iziToast.min.css?1745186941">
+    <link rel="stylesheet" type="text/css" href="/app/templates/neo/assets/css/search.css?1745186941">
+    <link rel="stylesheet" type="text/css" href="/app/templates/neo/assets/css/shift-away.css">
+    <link rel="stylesheet" type="text/css" href="/app/modules/module_page_pay/assets/css/pay.css?1745186941">
+            <link rel="stylesheet" href="/app/templates/neo/assets/css/swiper-bundle.min.css"/>
+                <link rel="stylesheet" type="text/css" href="/storage/assets/css/style.css?1745186941">
+            <link rel="stylesheet" type="text/css" href="/app/templates/neo/assets/css/style.css?1745186941">
+                <link rel="stylesheet" type="text/css" href="/app/modules/module_page_statistics/assets/css/1.css?1745186941">
+                    <link rel="stylesheet" type="text/css" href="/app/modules/module_block_main_servers/assets/css/1.css?1745186941">
+                    <link rel="stylesheet" type="text/css" href="/app/modules/module_block_main_chat/assets/css/1.css?1745186941">
+                    <link rel="stylesheet" type="text/css" href="/app/modules/module_block_main_banner_slider/assets/css/1.css?1745186941">
+            <style id="include">
+        :root{
+    --text-custom: #ffffff80;
+    --text-default: #ffffff;
+    --text-default-invert: #1b1c24;
+    --span: #6f78ef;
+    --span-low: rgb(111 120 239 / 5%);
+    --span-middle: rgb(111 120 239 / 25%);
+    --span-low-nav: rgb(111 120 239 / 10%);
+    --money: #f4ca80;
+    --money-bg: rgb(244 202 128 / 10%);
+    --green: #64ce82;
+    --orange: #f6b949;
+    --red: #ff4940;
+    --purple: #b379ff;
+    --grey: #1f1f1f;
+    --t: #ffc107;
+    --ct: #2196f3;
+    --top-one: #ffdb5c;
+    --top-two: #bfe0ff;
+    --top-three: #f8a785;
+    --bg: #0e0e0e;
+    --bg-table: #2c2c39;
+    --bg-modal: rgb(0 0 0 / 60%);
+    --transparent: rgb(255 255 255 / 2%);
+    --bottom-line-table: #272733;
+    --navbar: rgb(32 32 41 / 85%);
+    --card: #131313;
+    --button : #101010;
+    --button-hover : #1d1d1d;
+    --button-2 : #1d1d1d; 
+    --button-2-hover : #6f78ef;
+    --tooltip: rgb(32 32 41 / 85%);
+    --input-form: #181818;
+    --toast-bg-success: rgb(80 165 80);
+    --toast-msg-success: #fff;
+    --toast-bg-error: rgb(200 59 59);
+    --toast-msg-error: #fff
+}     </style>
+    <script>
+        var avatar = [];
+        
+        let servers = [{"ip":"45.136.204.37:27015","fakeip":"45.136.204.37:27015","name_custom":" #1 | FPS PUBLIC","server_mod":"PUBLIC","server_city":"Moscow","server_country":"RU","server_bage":"WHITE \u26aa"},{"ip":"37.230.162.115:27015","fakeip":"37.230.162.115:27015","name_custom":"#2 | PUBLIC MIRAGE","server_mod":"PUBLIC","server_city":"Moscow","server_country":"RU","server_bage":"BLACK \u26ab"},{"ip":"46.174.53.29:27115","fakeip":"46.174.53.29:27115","name_custom":"#3 | STANDOFF","server_mod":"PUBLIC","server_city":"Moscow","server_country":"RU","server_bage":"RED \ud83d\udd34"},{"ip":"46.174.53.29:27116","fakeip":"46.174.53.29:27116","name_custom":"#4 | AWP","server_mod":"AWP","server_city":"Moscow","server_country":"RU","server_bage":"YELLOW \ud83d\udfe1"},{"ip":"46.174.53.29:27117","fakeip":"46.174.53.29:27117","name_custom":"#5 | CUSTOM PUBLIC","server_mod":"PUBLIC","server_city":"Moscow","server_country":"RU","server_bage":"GREEN"},{"ip":"46.174.50.12:27015","fakeip":"46.174.50.12:27015","name_custom":"#6 | STANDOFF","server_mod":"PUBLIC","server_city":"Moscow","server_country":"RU","server_bage":""},{"ip":"194.93.2.192:27015","fakeip":"194.93.2.192:27015","name_custom":"#7 | DUST2 FPS","server_mod":"PUBLIC","server_city":"RU","server_country":"Moscow","server_bage":""},{"ip":"37.230.228.252:27015","fakeip":"37.230.228.252:27015","name_custom":"#8 | ANIME PUBLIC","server_mod":"PUBLIC","server_city":"RU","server_country":"Moscow","server_bage":""}];
+        let site = {"COUNT(*)":"80"};
+    </script>
 </head>
-<body>
-  <div class="background-overlay"></div>
-  <div class="wrapper">
-    <!-- Header -->
-    <header class="top-header">
-      <div class="logo">TIME PUBLIC</div>
-      <nav class="top-nav">
-        <a href="#about" class="nav-link">О сервере</a>
-        <a href="#admins" class="nav-link">Админы</a>
-        <a href="#connect" class="nav-link">Играть</a>
-        <a href="#discord" class="nav-link">Discord</a>
-      </nav>
-    </header>
+<body class="sidebar-collapse"><div class="global-container">
+    <div class="container-fluid"><div class="navbar row">
+    <div class="navbar_menu_left">
+        <div class="nav_second_left">
+            <div class="navbar_search">
+                <a class="nav_logo_text_center" href="/">
+                                        <img src="/storage/cache/img/global/logo_moon1.png" alt="">
+                </a>
+                <div class="nav_devider"></div>
+                <div class="social_buttons">
+                                            <a href="https://vk.com/moonproject.anime" target="_blank" data-tippy-content="VK" data-tippy-placement="top">
+                            <div class="social_but">
+                                <svg viewBox="0 0 448 512">
+                                    <path d="M31.4907 63.4907C0 94.9813 0 145.671 0 247.04V264.96C0 366.329 0 417.019 31.4907 448.509C62.9813 480 113.671 480 215.04 480H232.96C334.329 480 385.019 480 416.509 448.509C448 417.019 448 366.329 448 264.96V247.04C448 145.671 448 94.9813 416.509 63.4907C385.019 32 334.329 32 232.96 32H215.04C113.671 32 62.9813 32 31.4907 63.4907ZM75.6 168.267H126.747C128.427 253.76 166.133 289.973 196 297.44V168.267H244.16V242C273.653 238.827 304.64 205.227 315.093 168.267H363.253C359.313 187.435 351.46 205.583 340.186 221.579C328.913 237.574 314.461 251.071 297.733 261.227C316.41 270.499 332.907 283.63 346.132 299.751C359.357 315.873 369.01 334.618 374.453 354.747H321.44C316.555 337.262 306.614 321.61 292.865 309.754C279.117 297.899 262.173 290.368 244.16 288.107V354.747H238.373C136.267 354.747 78.0267 284.747 75.6 168.267Z" />
+                                </svg>
+                            </div>
+                        </a>
+                                                                <a href="https://t.me/moonprojectcs2" target="_blank" data-tippy-content="Telegram" data-tippy-placement="top">
+                            <div class="social_but">
+                                <svg x="0" y="0" viewBox="0 0 100 100" xml:space="preserve">
+                                    <g>
+                                        <path d="M89.442 11.418c-12.533 5.19-66.27 27.449-81.118 33.516-9.958 3.886-4.129 7.529-4.129 7.529s8.5 2.914 15.786 5.1 11.172-.243 11.172-.243l34.244-23.073c12.143-8.257 9.229-1.457 6.315 1.457-6.315 6.315-16.758 16.272-25.501 24.287-3.886 3.4-1.943 6.315-.243 7.772 6.315 5.343 23.558 16.272 24.53 17.001 5.131 3.632 15.223 8.861 16.758-2.186l6.072-38.13c1.943-12.872 3.886-24.773 4.129-28.173.728-8.257-8.015-4.857-8.015-4.857z"></path>
+                                    </g>
+                                </svg>
+                            </div>
+                        </a>
+                                                                                    <a href="https://discord.gg/qkRXKheHde" target="_blank" data-tippy-content="Discord" data-tippy-placement="top">
+                            <div class="social_but">
+                                <svg viewBox="0 0 640 512">
+                                    <path d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z" />
+                                </svg>
+                            </div>
+                        </a>
+                                                                                    <a href="https://www.tiktok.com/@moonprojectcs2?lang=ru-RU" target="_blank" data-tippy-content="Tik Tok" data-tippy-placement="top">
+                            <div class="social_but">
+                                <svg viewBox="0 0 448 512">
+                                    <path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" />
+                                </svg>
+                            </div>
+                        </a>
+                                    </div>
+                <div class="nav_devider"></div>
+                <div class="navbar_online_server_site">
+                    <svg viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"></path></svg>
+                    <div class="stats-serv-flex">
+                        <div id="online_server">-</div>
+                        <div class="servers_online_block">
+                            <p class="online_site">Онлайн на сайте: <span id="online_site">-</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header_burger">
+            <span></span>
+        </div>
+        <div class="nav_header_menu no_scroll">
+            <ul class="header_list">
+                                                    <a href="/home">
+                        <li>
+                            Главная                        </li>
+                    </a>
+                                    <a href="/leaderboard">
+                        <li>
+                            Топы                        </li>
+                    </a>
+                                    <a href="/store">
+                        <li>
+                            Магазин                        </li>
+                    </a>
+                                    <a href="/request">
+                        <li>
+                            Заявки                        </li>
+                    </a>
+                                    <a href="/skins">
+                        <li>
+                            Скинченджер                        </li>
+                    </a>
+                                    <a href="/punishment">
+                        <li>
+                            Наказания                        </li>
+                    </a>
+                                    <a href="/cases">
+                        <li>
+                            Кейсы                        </li>
+                    </a>
+                                    <a href="/clans">
+                        <li>
+                            Кланы                        </li>
+                    </a>
+                            </ul>
+        </div>
+    </div>
+    <div class="navigation_links">
+                        <div class="dropdown">
+                    <a href="/home" class="dropbtn active_btn">
+                        <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d='M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9l0 176c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z'/></svg>                        <span class="desc_nav_item">Главная</span>
+                    </a>
+                </div>
+                            <div class="dropdown">
+                    <a href="/leaderboard" class="dropbtn">
+                        <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d='M160 80c0-26.5 21.5-48 48-48l32 0c26.5 0 48 21.5 48 48l0 352c0 26.5-21.5 48-48 48l-32 0c-26.5 0-48-21.5-48-48l0-352zM0 272c0-26.5 21.5-48 48-48l32 0c26.5 0 48 21.5 48 48l0 160c0 26.5-21.5 48-48 48l-32 0c-26.5 0-48-21.5-48-48L0 272zM368 96l32 0c26.5 0 48 21.5 48 48l0 288c0 26.5-21.5 48-48 48l-32 0c-26.5 0-48-21.5-48-48l0-288c0-26.5 21.5-48 48-48z'/></svg>                        <span class="desc_nav_item">Топы</span>
+                    </a>
+                </div>
+                            <div class="dropdown">
+                    <a href="/store" class="dropbtn">
+                        <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d='M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64l0 48-128 0 0-48zm-48 48l-64 0c-26.5 0-48 21.5-48 48L0 416c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-208c0-26.5-21.5-48-48-48l-64 0 0-48C336 50.1 285.9 0 224 0S112 50.1 112 112l0 48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z'/></svg>                        <span class="desc_nav_item">Магазин</span>
+                    </a>
+                </div>
+                            <div class="dropdown">
+                    <a href="/request" class="dropbtn">
+                        <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d='M0 64C0 28.7 28.7 0 64 0L224 0l0 128c0 17.7 14.3 32 32 32l128 0 0 288c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 64zm384 64l-128 0L256 0 384 128z'/></svg>                        <span class="desc_nav_item">Заявки</span>
+                    </a>
+                </div>
+                            <div class="dropdown">
+                    <a href="/skins" class="dropbtn">
+                        <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 576 512'><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d='M339.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L568.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S517.7-4.4 499.1 9.6L262.4 187.2c-24 18-38.2 46.1-38.4 76.1L339.3 367.1zm-19.6 25.4l-116-104.4C143.9 290.3 96 339.6 96 400c0 3.9 .2 7.8 .6 11.6C98.4 429.1 86.4 448 68.8 448L64 448c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z'/></svg>                        <span class="desc_nav_item">Скинченджер</span>
+                    </a>
+                </div>
+                            <div class="dropdown">
+                    <a href="/punishment" class="dropbtn">
+                        <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 576 512'><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d='M88.7 223.8L0 375.8 0 96C0 60.7 28.7 32 64 32l117.5 0c17 0 33.3 6.7 45.3 18.7l26.5 26.5c12 12 28.3 18.7 45.3 18.7L416 96c35.3 0 64 28.7 64 64l0 32-336 0c-22.8 0-43.8 12.1-55.3 31.8zm27.6 16.1C122.1 230 132.6 224 144 224l400 0c11.5 0 22 6.1 27.7 16.1s5.7 22.2-.1 32.1l-112 192C453.9 474 443.4 480 432 480L32 480c-11.5 0-22-6.1-27.7-16.1s-5.7-22.2 .1-32.1l112-192z'/></svg>                        <span class="desc_nav_item">Наказания</span>
+                    </a>
+                </div>
+                            <div class="dropdown">
+                    <a href="/cases" class="dropbtn">
+                        <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 512'><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d='M58.9 42.1c3-6.1 9.6-9.6 16.3-8.7L320 64 564.8 33.4c6.7-.8 13.3 2.7 16.3 8.7l41.7 83.4c9 17.9-.6 39.6-19.8 45.1L439.6 217.3c-13.9 4-28.8-1.9-36.2-14.3L320 64 236.6 203c-7.4 12.4-22.3 18.3-36.2 14.3L37.1 170.6c-19.3-5.5-28.8-27.2-19.8-45.1L58.9 42.1zM321.1 128l54.9 91.4c14.9 24.8 44.6 36.6 72.5 28.6L576 211.6l0 167c0 22-15 41.2-36.4 46.6l-204.1 51c-10.2 2.6-20.9 2.6-31 0l-204.1-51C79 419.7 64 400.5 64 378.5l0-167L191.6 248c27.8 8 57.6-3.8 72.5-28.6L318.9 128l2.2 0z'/></svg>                        <span class="desc_nav_item">Кейсы</span>
+                    </a>
+                </div>
+                            <div class="dropdown">
+                    <a href="/clans" class="dropbtn">
+                        <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d='M303.7 96.2c11.1-11.1 115.5-77 139.2-53.2 23.7 23.7-42.1 128.1-53.2 139.2-11.1 11.1-39.4 .9-63.1-22.9-23.8-23.7-34.1-52-22.9-63.1zM109.9 68.1C73.6 47.5 22 24.6 5.6 41.1c-16.6 16.6 7.1 69.4 27.9 105.7 18.5-32.2 44.8-59.3 76.4-78.7zM406.7 174c3.3 11.3 2.7 20.7-2.7 26.1-20.3 20.3-87.5-27-109.3-70.1-18-32.3-11.1-53.4 14.9-48.7 5.7-3.6 12.3-7.6 19.6-11.6-29.8-15.5-63.6-24.3-99.5-24.3-119.1 0-215.6 96.5-215.6 215.6 0 119 96.5 215.6 215.6 215.6S445.3 380.1 445.3 261c0-38.4-10.1-74.5-27.7-105.8-3.9 7-7.6 13.3-10.9 18.8z'/></svg>                        <span class="desc_nav_item">Кланы</span>
+                    </a>
+                </div>
+                </div>
+    <div class="navbar_usermenu">
+                            <div class="auth_user_btn" onclick="location.href='?auth=login'">
+                Войти через Steam                <svg viewBox="0 0 496 512">
+                    <path d="M496 256c0 137-111.2 248-248.4 248-113.8 0-209.6-76.3-239-180.4l95.2 39.3c6.4 32.1 34.9 56.4 68.9 56.4 39.2 0 71.9-32.4 70.2-73.5l84.5-60.2c52.1 1.3 95.8-40.9 95.8-93.5 0-51.6-42-93.5-93.7-93.5s-93.7 42-93.7 93.5v1.2L176.6 279c-15.5-.9-30.7 3.4-43.5 12.1L0 236.1C10.2 108.4 117.1 8 247.6 8 384.8 8 496 119 496 256zM155.7 384.3l-30.5-12.6a52.79 52.79 0 0 0 27.2 25.8c26.9 11.2 57.8-1.6 69-28.4 5.4-13 5.5-27.3.1-40.3-5.4-13-15.5-23.2-28.5-28.6-12.9-5.4-26.7-5.2-38.9-.6l31.5 13c19.8 8.2 29.2 30.9 20.9 50.7-8.3 19.9-31 29.2-50.8 21zm173.8-129.9c-34.4 0-62.4-28-62.4-62.3s28-62.3 62.4-62.3 62.4 28 62.4 62.3-27.9 62.3-62.4 62.3zm.1-15.6c25.9 0 46.9-21 46.9-46.8 0-25.9-21-46.8-46.9-46.8s-46.9 21-46.9 46.8c.1 25.8 21.1 46.8 46.9 46.8z" />
+                </svg>
+            </div>
+                    </div>
+</div>
+<div class="container_modular">
+    <div class="modules-container"><div class="popup_modal" id="popupPay">
+    <div class="popup_modal_content no-close no-scrollbar">
+        <div class="popup_modal_head">
+            Пополнение баланса            <span class="popup_modal_close">
+                <svg viewBox="0 0 320 512">
+                    <path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"></path>
+                </svg>
+            </span>
+        </div>
+        <form id="pay" data-default="true" enctype="multipart/form-data" method="post" class="lk_window">
+            <div class="popup_balance_content">
+                                    <div class="popub_balance_first">
+                        <div class="popup_column">
+                            <div class="popup_input-form" style="margin-bottom: 0">
+                                <div class="input_text">
+                                    <svg viewBox="0 0 576 512">
+                                        <path d="M512 32C547.3 32 576 60.65 576 96V128H0V96C0 60.65 28.65 32 64 32H512zM576 416C576 451.3 547.3 480 512 480H64C28.65 480 0 451.3 0 416V224H576V416zM112 352C103.2 352 96 359.2 96 368C96 376.8 103.2 384 112 384H176C184.8 384 192 376.8 192 368C192 359.2 184.8 352 176 352H112zM240 384H368C376.8 384 384 376.8 384 368C384 359.2 376.8 352 368 352H240C231.2 352 224 359.2 224 368C224 376.8 231.2 384 240 384z" />
+                                    </svg>
+                                    Выберите способ оплаты                                </div>
+                                <div class="popup_pay_area">
+                                                                            <input type="radio" name="gatewayPay" data-name="YooMoney" value="yoomoney" id="Gateway5" class="popup_gateways">
+                                        <label for="Gateway5" class="popup_gateways-label">
+                                            <img src="//cs2-moon.ru/app/modules/module_page_pay/assets/gateways/yoomoney.svg" alt="">
+                                        </label>
+                                                                    </div>
+                            </div>
+                                                            <div class="popup_input-form">
+                                    <div class="input_text">
+                                        <svg viewBox="0 0 496 512">
+                                            <path d="M496 256c0 137-111.2 248-248.4 248-113.8 0-209.6-76.3-239-180.4l95.2 39.3c6.4 32.1 34.9 56.4 68.9 56.4 39.2 0 71.9-32.4 70.2-73.5l84.5-60.2c52.1 1.3 95.8-40.9 95.8-93.5 0-51.6-42-93.5-93.7-93.5s-93.7 42-93.7 93.5v1.2L176.6 279c-15.5-.9-30.7 3.4-43.5 12.1L0 236.1C10.2 108.4 117.1 8 247.6 8 384.8 8 496 119 496 256zM155.7 384.3l-30.5-12.6a52.79 52.79 0 0 0 27.2 25.8c26.9 11.2 57.8-1.6 69-28.4 5.4-13 5.5-27.3.1-40.3-5.4-13-15.5-23.2-28.5-28.6-12.9-5.4-26.7-5.2-38.9-.6l31.5 13c19.8 8.2 29.2 30.9 20.9 50.7-8.3 19.9-31 29.2-50.8 21zm173.8-129.9c-34.4 0-62.4-28-62.4-62.3s28-62.3 62.4-62.3 62.4 28 62.4 62.3-27.9 62.3-62.4 62.3zm.1-15.6c25.9 0 46.9-21 46.9-46.8 0-25.9-21-46.8-46.9-46.8s-46.9 21-46.9 46.8c.1 25.8 21.1 46.8 46.9 46.8z" />
+                                        </svg>
+                                        STEAM ID:
+                                    </div>
+                                    <input name="steam" placeholder="STEAM_1:1:390... / 7656119803... / [U:1:1234234] / https://steamcommunity.com/profiles/... ">
+                                </div>
+                                                        <div class="popup_input-form" id="promoresult"></div>
+                        </div>
+                    </div>
+                    <div class="popup_middle_line">
+                        <span class="popup_line_top"></span>
+                        <span class="popup_arrow"></span>
+                        <span class="popup_line_bottom"></span>
+                    </div>
+                                <div class="popub_balance_second">
+                    <div style="width: 100% !important;display: flex;flex-direction: column;">
+                        <div class="popup_input-form w100">
+                            <div class="input_text">
+                                <svg x="0" y="0" viewBox="0 0 25 24" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path d="M19.972 8.75h-2.94c-1.27 0-2.03-.76-2.03-2.03V3.78c0-1.27.76-2.03 2.03-2.03h2.94c1.27 0 2.03.76 2.03 2.03v2.94c0 1.27-.76 2.03-2.03 2.03zm.22-3.31c-.12-.12-.28-.18-.44-.18s-.32.06-.44.18l-.18.18V3.38c0-.35-.28-.63-.63-.63s-.63.28-.63.63v2.24l-.18-.18c-.24-.24-.64-.24-.88 0s-.24.64 0 .88l1.25 1.25c.05.05.12.09.19.12.02.01.04.01.06.02.05.02.1.03.16.03h.06c.07 0 .13-.01.2-.04h.02c.07-.03.13-.07.18-.12.01-.01.01-.01.02-.01l1.25-1.25c.24-.24.24-.64-.01-.88zM2.002 11.46v5c0 2.29 1.85 4.14 4.14 4.14h11.71c2.29 0 4.15-1.86 4.15-4.15v-4.99c0-.67-.54-1.21-1.21-1.21H3.212c-.67 0-1.21.54-1.21 1.21zm6 5.79h-2c-.41 0-.75-.34-.75-.75s.34-.75.75-.75h2c.41 0 .75.34.75.75s-.34.75-.75.75zm6.5 0h-4c-.41 0-.75-.34-.75-.75s.34-.75.75-.75h4c.41 0 .75.34.75.75s-.34.75-.75.75zM13.502 4.61v2.93c0 .67-.54 1.21-1.21 1.21h-9.08c-.68 0-1.21-.56-1.21-1.23.01-1.13.46-2.16 1.21-2.91s1.79-1.21 2.93-1.21h6.15c.67 0 1.21.54 1.21 1.21z"></path>
+                                        </g>
+                                    </g>
+                                </svg>
+                                Cпособ оплаты                            </div>
+                        </div>
+                        <div class="popup_pay_info">
+                            <div class="popup_pay_info_left">
+                                <span class="popup_title_text">Способ оплаты</span>
+                                <span class="popup_pay_method" id="kass_name">Не выбран</span>
+                            </div>
+                            <div id="kass_img"></div>
+                        </div>
+                        <div class="skintoggle" id="skinnone">
+                            <div class="popup_input-form w100">
+                                <div class="input_text">
+                                    <svg x="0" y="0" viewBox="0 0 25 24" xml:space="preserve">
+                                        <g>
+                                            <g>
+                                                <path d="M19.972 8.75h-2.94c-1.27 0-2.03-.76-2.03-2.03V3.78c0-1.27.76-2.03 2.03-2.03h2.94c1.27 0 2.03.76 2.03 2.03v2.94c0 1.27-.76 2.03-2.03 2.03zm.22-3.31c-.12-.12-.28-.18-.44-.18s-.32.06-.44.18l-.18.18V3.38c0-.35-.28-.63-.63-.63s-.63.28-.63.63v2.24l-.18-.18c-.24-.24-.64-.24-.88 0s-.24.64 0 .88l1.25 1.25c.05.05.12.09.19.12.02.01.04.01.06.02.05.02.1.03.16.03h.06c.07 0 .13-.01.2-.04h.02c.07-.03.13-.07.18-.12.01-.01.01-.01.02-.01l1.25-1.25c.24-.24.24-.64-.01-.88zM2.002 11.46v5c0 2.29 1.85 4.14 4.14 4.14h11.71c2.29 0 4.15-1.86 4.15-4.15v-4.99c0-.67-.54-1.21-1.21-1.21H3.212c-.67 0-1.21.54-1.21 1.21zm6 5.79h-2c-.41 0-.75-.34-.75-.75s.34-.75.75-.75h2c.41 0 .75.34.75.75s-.34.75-.75.75zm6.5 0h-4c-.41 0-.75-.34-.75-.75s.34-.75.75-.75h4c.41 0 .75.34.75.75s-.34.75-.75.75zM13.502 4.61v2.93c0 .67-.54 1.21-1.21 1.21h-9.08c-.68 0-1.21-.56-1.21-1.23.01-1.13.46-2.16 1.21-2.91s1.79-1.21 2.93-1.21h6.15c.67 0 1.21.54 1.21 1.21z"></path>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    Выберите желаемую сумму                                </div>
+                            </div>
+                            <div class="preset_buttons">
+                                <button class="secondary_btn popup_fill_width preset-amount" type="button" data-amount="100">100</button>
+                                <button class="secondary_btn popup_fill_width preset-amount" type="button" data-amount="250">250</button>
+                                <button class="secondary_btn popup_fill_width preset-amount" type="button" data-amount="500">500</button>
+                                <button class="secondary_btn popup_fill_width preset-amount" type="button" data-amount="1000">1000</button>
+                                <button class="secondary_btn popup_fill_width preset-amount" type="button" data-amount="2000">2000</button>
+                                <button id="clearButton" class="secondary_btn popup_fill_width delete-amount" type="button">
+                                    <svg viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.188 3.322c.523-.21 1.1-.266 1.656-.158a2.894 2.894 0 0 1 1.468.762l.908.877 2.994-2.909c.237-.222.554-.344.883-.342.329.003.644.131.876.357.233.226.365.531.368.85a1.2 1.2 0 0 1-.352.858l-2.997 2.906.906.877c.4.39.673.886.784 1.426.11.54.053 1.1-.164 1.608l-.652 1.53-8.252-8.009 1.574-.633ZM4.943 4.63l9.227 8.959-1.448 3.391c-.07.163-.18.307-.32.419a1.12 1.12 0 0 1-1.021.196 1.11 1.11 0 0 1-.46-.269L1.093 7.783a1.042 1.042 0 0 1-.073-1.436c.115-.137.262-.243.43-.311L4.942 4.63ZM17.49 17.243c0 .673.562 1.219 1.255 1.219.693 0 1.255-.546 1.255-1.219 0-.672-.562-1.218-1.255-1.218-.693 0-1.255.546-1.255 1.218Zm-1.673-.407a.824.824 0 0 1-.836-.81c0-.449.374-.812.836-.812.461 0 .835.363.835.811a.824.824 0 0 1-.835.811Zm1.674-3.247c0 .448.374.811.835.811a.824.824 0 0 0 .836-.811.824.824 0 0 0-.836-.812.824.824 0 0 0-.835.812Z"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="popup_input-form w100">
+                                <div class="input_text">
+                                    <svg viewBox="0 0 512 512">
+                                        <path d="M512 80c0 18-14.3 34.6-38.4 48c-29.1 16.1-72.5 27.5-122.3 30.9c-3.7-1.8-7.4-3.5-11.3-5C300.6 137.4 248.2 128 192 128c-8.3 0-16.4 .2-24.5 .6l-1.1-.6C142.3 114.6 128 98 128 80c0-44.2 86-80 192-80S512 35.8 512 80zM160.7 161.1c10.2-.7 20.7-1.1 31.3-1.1c62.2 0 117.4 12.3 152.5 31.4C369.3 204.9 384 221.7 384 240c0 4-.7 7.9-2.1 11.7c-4.6 13.2-17 25.3-35 35.5c0 0 0 0 0 0c-.1 .1-.3 .1-.4 .2l0 0 0 0c-.3 .2-.6 .3-.9 .5c-35 19.4-90.8 32-153.6 32c-59.6 0-112.9-11.3-148.2-29.1c-1.9-.9-3.7-1.9-5.5-2.9C14.3 274.6 0 258 0 240c0-34.8 53.4-64.5 128-75.4c10.5-1.5 21.4-2.7 32.7-3.5zM416 240c0-21.9-10.6-39.9-24.1-53.4c28.3-4.4 54.2-11.4 76.2-20.5c16.3-6.8 31.5-15.2 43.9-25.5V176c0 19.3-16.5 37.1-43.8 50.9c-14.6 7.4-32.4 13.7-52.4 18.5c.1-1.8 .2-3.5 .2-5.3zm-32 96c0 18-14.3 34.6-38.4 48c-1.8 1-3.6 1.9-5.5 2.9C304.9 404.7 251.6 416 192 416c-62.8 0-118.6-12.6-153.6-32C14.3 370.6 0 354 0 336V300.6c12.5 10.3 27.6 18.7 43.9 25.5C83.4 342.6 135.8 352 192 352s108.6-9.4 148.1-25.9c7.8-3.2 15.3-6.9 22.4-10.9c6.1-3.4 11.8-7.2 17.2-11.2c1.5-1.1 2.9-2.3 4.3-3.4V304v5.7V336zm32 0V304 278.1c19-4.2 36.5-9.5 52.1-16c16.3-6.8 31.5-15.2 43.9-25.5V272c0 10.5-5 21-14.9 30.9c-16.3 16.3-45 29.7-81.3 38.4c.1-1.7 .2-3.5 .2-5.3zM192 448c56.2 0 108.6-9.4 148.1-25.9c16.3-6.8 31.5-15.2 43.9-25.5V432c0 44.2-86 80-192 80S0 476.2 0 432V396.6c12.5 10.3 27.6 18.7 43.9 25.5C83.4 438.6 135.8 448 192 448z" />
+                                    </svg>
+                                    Сумма пополнения:                                </div>
+                                <div class="popup_number">
+                                    <button class="popup_number-minus" type="button" onclick="decrementValue(this);" data-tippy-content="-25" data-tippy-placement="top">-</button>
+                                    <input id="numberInput" type="number" min="25" max="10000" value="50" name="amount" placeholder="Введите сумму" onchange="updateValue(this);">
+                                    <button class="popup_number-plus" type="button" onclick="incrementValue(this);" data-tippy-content="+25" data-tippy-placement="top">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popup_promo_block">
+                            <div class="popup_input-form w100">
+                                <div class="input_text">
+                                    <svg x="0" y="0" viewBox="0 0 32 32" xml:space="preserve">
+                                        <g>
+                                            <path d="M28.038 8.81a.996.996 0 0 0-1.41 0 2.432 2.432 0 1 1-3.44-3.44.996.996 0 0 0 0-1.41l-2.66-2.669c-.19-.18-.45-.29-.71-.29-.27 0-.52.11-.71.29L8.72 11.681l11.59 11.608L30.707 12.89c.39-.39.39-1.02 0-1.42zM1 19.82c0 .26.11.52.29.71l2.67 2.66c.39.39 1.02.39 1.41 0a2.432 2.432 0 1 1 3.44 3.44.996.996 0 0 0 0 1.409l2.66 2.67c.2.19.46.29.71.29.259 0 .509-.1.709-.29l5.3-5.3-11.6-11.599-5.299 5.3c-.18.19-.29.44-.29.71z"></path>
+                                        </g>
+                                    </svg>
+                                    Промокод                                </div>
+                                <div class="popup_promo_area">
+                                    <input name="promocode" placeholder="Вставьте промокод">
+                                    <div class="popup_clear_promo" id="popupClearPromo">
+                                        <svg viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.188 3.322c.523-.21 1.1-.266 1.656-.158a2.894 2.894 0 0 1 1.468.762l.908.877 2.994-2.909c.237-.222.554-.344.883-.342.329.003.644.131.876.357.233.226.365.531.368.85a1.2 1.2 0 0 1-.352.858l-2.997 2.906.906.877c.4.39.673.886.784 1.426.11.54.053 1.1-.164 1.608l-.652 1.53-8.252-8.009 1.574-.633ZM4.943 4.63l9.227 8.959-1.448 3.391c-.07.163-.18.307-.32.419a1.12 1.12 0 0 1-1.021.196 1.11 1.11 0 0 1-.46-.269L1.093 7.783a1.042 1.042 0 0 1-.073-1.436c.115-.137.262-.243.43-.311L4.942 4.63ZM17.49 17.243c0 .673.562 1.219 1.255 1.219.693 0 1.255-.546 1.255-1.219 0-.672-.562-1.218-1.255-1.218-.693 0-1.255.546-1.255 1.218Zm-1.673-.407a.824.824 0 0 1-.836-.81c0-.449.374-.812.836-.812.461 0 .835.363.835.811a.824.824 0 0 1-.835.811Zm1.674-3.247c0 .448.374.811.835.811a.824.824 0 0 0 .836-.811.824.824 0 0 0-.836-.812.824.824 0 0 0-.835.812Z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popup_input-form w100">
+                                <div class="input_text">
+                                    <svg x="0" y="0" viewBox="0 0 263.285 263.285" xml:space="preserve">
+                                        <g>
+                                            <path d="M193.882 8.561c-7.383-3.756-16.414-.813-20.169 6.573L62.153 234.556c-3.755 7.385-.812 16.414 6.573 20.169a14.94 14.94 0 0 0 6.786 1.632c5.466 0 10.735-2.998 13.383-8.205L200.455 28.73c3.755-7.385.812-16.414-6.573-20.169zM113.778 80.818c0-31.369-25.521-56.89-56.89-56.89C25.521 23.928 0 49.449 0 80.818c0 31.368 25.521 56.889 56.889 56.889 31.369 0 56.889-25.521 56.889-56.889zm-56.889 26.889C42.063 107.707 30 95.644 30 80.818c0-14.827 12.063-26.89 26.889-26.89 14.827 0 26.89 12.062 26.89 26.89-.001 14.826-12.063 26.889-26.89 26.889zM206.396 125.58c-31.369 0-56.89 25.521-56.89 56.889 0 31.368 25.52 56.889 56.89 56.889 31.368 0 56.889-25.52 56.889-56.889 0-31.369-25.52-56.889-56.889-56.889zm0 83.777c-14.827 0-26.89-12.063-26.89-26.889 0-14.826 12.063-26.889 26.89-26.889 14.826 0 26.889 12.063 26.889 26.889 0 14.826-12.062 26.889-26.889 26.889z"></path>
+                                        </g>
+                                    </svg>
+                                    Доступные                                </div>
+                                <div class="popup_promo_list">
+                                                                            <div class="popup_current_promo popup_copybtn" data-promocode="Moon25">
+                                            Moon25                                            <svg width="16" height="16" viewBox="0 0 512 512">
+                                                <path d="M224 0c-35.3 0-64 28.7-64 64V288c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H224zM64 160c-35.3 0-64 28.7-64 64V448c0 35.3 28.7 64 64 64H288c35.3 0 64-28.7 64-64V384H288v64H64V224h64V160H64z" />
+                                            </svg>
+                                        </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="form-group accept">
+                            <input id="checkbox" type="checkbox"><label for="checkbox">Я ознакомлен и согласен с <a href="//cs2-moon.ru/oferta">договором оферты</a></label>
+                        </div>
+                        <input id="paybutton" class="popup_btn_purple secondary_btn popup_btn_disabled w100" form="pay" type="submit" value="Пополнить" disabled="">
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div style="display: none;" id="resultForm"></div>
+    </div>
+</div><div class="popup_modal" id="popup_promo_code">
+    <div class="popup_modal_content no-close no-scrollbar">
+        <div class="popup_modal_head">
+            Активировать промокод
+            <span class="popup_modal_close">
+                <svg viewBox="0 0 320 512">
+                    <path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"></path>
+                </svg>
+            </span>
+        </div>
+        <form id="promo_activate" data-default="true" enctype="multipart/form-data" method="post">
+            <div class="popup_input-form w100">
+                <div class="input-form">
+                    <div class="input_text">                   
+                        Промокод
+                    </div>
+                    <input name="promo_name" placeholder="Введите промокод">
+                </div>
+            </div>
+            <input class="secondary_btn w100" name="promo_activate" type="submit" form="promo_activate" value="Применить">
+        </form>
+    </div>
+</div><div class="home-grid">
+    <div id="home-servchat" class="home-infochat">
+        <div>
+            <div>
+                <div id="home-mode" class="modes_block">
+                    <div class="mode_block_category" data-mode="PUBLIC"> 
+                        <div class="mode_info">
+                            <div class="mode-desc">команда против команды</div>
+                            <p class="mod_name">PUBLIC</p>
+                            <div class="play_now"><div class="mode-dot"></div><span class="play_now_span" id="mode-online-public">-</span></div>
+                        </div>
+                        <img class="game_mode" loading="lazy" src="//cs2-moon.ru/app/modules/module_block_main_servers/img/public.webp" alt="">
+                    </div>
+                    <div class="mode_block_category" data-mode="AWP">
+                        <div class="mode_info">
+                            <div class="mode-desc">команда против команды</div>
+                            <p class="mod_name">AWP</p>
+                            <div class="play_now"><div class="mode-dot"></div><span class="play_now_span" id="mode-online-awp">-</span></div>
+                        </div>
+                        <img class="game_mode" loading="lazy" src="//cs2-moon.ru/app/modules/module_block_main_servers/img/awp.webp" alt="">
+                    </div>
+                </div>
+                <div id="home-servers" class="home-block-none">
+                    <div data-mode-info="Все" class="home-mode-info" style="">
+                        <div class="mode-nameonline">
+                            <span class="mode-name">MOON PROJECT</span> 
+                            <div class="mode-info-online">
+                                <span id="mode-info-online-all" class="mode-servers-count">-</span>
+                                <svg viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"></path></svg>
+                            </div>
+                        </div>
+                        <div class="mode-description2">
+                            <p class="mode-description">Проект игровых серверов в игре Counter Strike 2. Играй в CS2 на режимах: PUBLIC, AWP</p>
+                        </div>
+                    </div>
+                    <div data-mode-info="PUBLIC" class="home-mode-info" style="background-image: url(&quot;//cs2-moon.ru/storage/cache/img/maps/mode/info-public.webp&quot;); display: none;">
+                        <div class="mode-nameonline">
+                            <span class="mode-name">PUBLIC</span> 
+                            <div class="mode-info-online">
+                                <span id="mode-info-online-public" class="mode-servers-count">-</span>
+                                <svg viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"></path></svg>
+                            </div>
+                        </div>
+                        <div class="mode-description2">
+                            <p class="mode-description">Режим, в котором любой желающий может попробовать свои силы в игре на простых картах.</p>
+                        </div>
+                    </div>
+                    <div data-mode-info="AWP" class="home-mode-info" style="background-image: url(&quot;//cs2-moon.ru/storage/cache/img/maps/mode/info-awp1.webp&quot;); display: none;">
+                        <div class="mode-nameonline">
+                            <span class="mode-name">AWP</span> 
+                            <div class="mode-info-online">
+                                <span id="mode-info-online-awp" class="mode-servers-count">-</span>
+                                <svg viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"></path></svg>
+                            </div>
+                        </div>
+                        <div class="mode-description2">
+                            <p class="mode-description">Режим, в котором любой желающий может попробовать свои силы в игре на вооружение только AWP и Desert Eagle.</p>
+                        </div>
+                    </div>
+                    <div >
+                        <div class="servers_filter card">
+                            <div class="filter_chips">
+                                <button class="chips_btn  mode" data-mode="Все">Все</button>
+                                                                        <button class="chips_btn  mode" data-mode="PUBLIC">PUBLIC</button>
+                                                                        <button class="chips_btn  mode" data-mode="AWP">AWP</button>
+                                                            </div>
+                            <a id="updateservers" data-tippy-content="Обновить информацию" data-tippy-placement="top" style="display: none;">
+                                <svg viewBox="0 0 50 50">
+                                    <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="servers_wrap">
+                                                    <div class="server_block" id="server-mode-0">
+                                <div class="server_map_image">
+                                    <img class="map" ondrag="return false" ondragstart="return false" id="server-map-image-0" src="//cs2-moon.ru/storage/cache/img/maps/730/-.jpg" alt="" title="">
+                                </div>
+                                <div class="top_server_block">
+                                    <div class="server_info_block">
+                                        <div class="server_name_ip copybtn3" id="copy_btn_0" data-clipboard-text="" data-tippy-content="Скопировать IP" data-tippy-placement="right">
+                                                                                            <div class="server_badge" id="server-bage-0"></div>
+                                                                                        <div class="server_name_custom" id="server-name-0">Загружается</div>
+                                        </div>
+                                        <div class="server_players_mapname">
+                                            <div class="server_players_block">
+                                                <div id="server-players-0">0/0</div>
+                                            </div>
+                                            <div class="server_map_name" id="server-map-0">Загружается</div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div style="position: absolute;">
+                                            <div class="progress_server_block">
+                                                <div class="progress">
+                                                    <div class="progress-value" id="progess-formula-0"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="server_button play" id="0" onclick="get_players_data(id)" href="javascript:void(0);">
+                                            <svg viewBox="0 0 384 512">
+                                                <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <div class="server_block" id="server-mode-1">
+                                <div class="server_map_image">
+                                    <img class="map" ondrag="return false" ondragstart="return false" id="server-map-image-1" src="//cs2-moon.ru/storage/cache/img/maps/730/-.jpg" alt="" title="">
+                                </div>
+                                <div class="top_server_block">
+                                    <div class="server_info_block">
+                                        <div class="server_name_ip copybtn3" id="copy_btn_1" data-clipboard-text="" data-tippy-content="Скопировать IP" data-tippy-placement="right">
+                                                                                            <div class="server_badge" id="server-bage-1"></div>
+                                                                                        <div class="server_name_custom" id="server-name-1">Загружается</div>
+                                        </div>
+                                        <div class="server_players_mapname">
+                                            <div class="server_players_block">
+                                                <div id="server-players-1">0/0</div>
+                                            </div>
+                                            <div class="server_map_name" id="server-map-1">Загружается</div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div style="position: absolute;">
+                                            <div class="progress_server_block">
+                                                <div class="progress">
+                                                    <div class="progress-value" id="progess-formula-1"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="server_button play" id="1" onclick="get_players_data(id)" href="javascript:void(0);">
+                                            <svg viewBox="0 0 384 512">
+                                                <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <div class="server_block" id="server-mode-2">
+                                <div class="server_map_image">
+                                    <img class="map" ondrag="return false" ondragstart="return false" id="server-map-image-2" src="//cs2-moon.ru/storage/cache/img/maps/730/-.jpg" alt="" title="">
+                                </div>
+                                <div class="top_server_block">
+                                    <div class="server_info_block">
+                                        <div class="server_name_ip copybtn3" id="copy_btn_2" data-clipboard-text="" data-tippy-content="Скопировать IP" data-tippy-placement="right">
+                                                                                            <div class="server_badge" id="server-bage-2"></div>
+                                                                                        <div class="server_name_custom" id="server-name-2">Загружается</div>
+                                        </div>
+                                        <div class="server_players_mapname">
+                                            <div class="server_players_block">
+                                                <div id="server-players-2">0/0</div>
+                                            </div>
+                                            <div class="server_map_name" id="server-map-2">Загружается</div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div style="position: absolute;">
+                                            <div class="progress_server_block">
+                                                <div class="progress">
+                                                    <div class="progress-value" id="progess-formula-2"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="server_button play" id="2" onclick="get_players_data(id)" href="javascript:void(0);">
+                                            <svg viewBox="0 0 384 512">
+                                                <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <div class="server_block" id="server-mode-3">
+                                <div class="server_map_image">
+                                    <img class="map" ondrag="return false" ondragstart="return false" id="server-map-image-3" src="//cs2-moon.ru/storage/cache/img/maps/730/-.jpg" alt="" title="">
+                                </div>
+                                <div class="top_server_block">
+                                    <div class="server_info_block">
+                                        <div class="server_name_ip copybtn3" id="copy_btn_3" data-clipboard-text="" data-tippy-content="Скопировать IP" data-tippy-placement="right">
+                                                                                            <div class="server_badge" id="server-bage-3"></div>
+                                                                                        <div class="server_name_custom" id="server-name-3">Загружается</div>
+                                        </div>
+                                        <div class="server_players_mapname">
+                                            <div class="server_players_block">
+                                                <div id="server-players-3">0/0</div>
+                                            </div>
+                                            <div class="server_map_name" id="server-map-3">Загружается</div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div style="position: absolute;">
+                                            <div class="progress_server_block">
+                                                <div class="progress">
+                                                    <div class="progress-value" id="progess-formula-3"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="server_button play" id="3" onclick="get_players_data(id)" href="javascript:void(0);">
+                                            <svg viewBox="0 0 384 512">
+                                                <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <div class="server_block" id="server-mode-4">
+                                <div class="server_map_image">
+                                    <img class="map" ondrag="return false" ondragstart="return false" id="server-map-image-4" src="//cs2-moon.ru/storage/cache/img/maps/730/-.jpg" alt="" title="">
+                                </div>
+                                <div class="top_server_block">
+                                    <div class="server_info_block">
+                                        <div class="server_name_ip copybtn3" id="copy_btn_4" data-clipboard-text="" data-tippy-content="Скопировать IP" data-tippy-placement="right">
+                                                                                            <div class="server_badge" id="server-bage-4"></div>
+                                                                                        <div class="server_name_custom" id="server-name-4">Загружается</div>
+                                        </div>
+                                        <div class="server_players_mapname">
+                                            <div class="server_players_block">
+                                                <div id="server-players-4">0/0</div>
+                                            </div>
+                                            <div class="server_map_name" id="server-map-4">Загружается</div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div style="position: absolute;">
+                                            <div class="progress_server_block">
+                                                <div class="progress">
+                                                    <div class="progress-value" id="progess-formula-4"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="server_button play" id="4" onclick="get_players_data(id)" href="javascript:void(0);">
+                                            <svg viewBox="0 0 384 512">
+                                                <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <div class="server_block" id="server-mode-5">
+                                <div class="server_map_image">
+                                    <img class="map" ondrag="return false" ondragstart="return false" id="server-map-image-5" src="//cs2-moon.ru/storage/cache/img/maps/730/-.jpg" alt="" title="">
+                                </div>
+                                <div class="top_server_block">
+                                    <div class="server_info_block">
+                                        <div class="server_name_ip copybtn3" id="copy_btn_5" data-clipboard-text="" data-tippy-content="Скопировать IP" data-tippy-placement="right">
+                                                                                        <div class="server_name_custom" id="server-name-5">Загружается</div>
+                                        </div>
+                                        <div class="server_players_mapname">
+                                            <div class="server_players_block">
+                                                <div id="server-players-5">0/0</div>
+                                            </div>
+                                            <div class="server_map_name" id="server-map-5">Загружается</div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div style="position: absolute;">
+                                            <div class="progress_server_block">
+                                                <div class="progress">
+                                                    <div class="progress-value" id="progess-formula-5"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="server_button play" id="5" onclick="get_players_data(id)" href="javascript:void(0);">
+                                            <svg viewBox="0 0 384 512">
+                                                <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <div class="server_block" id="server-mode-6">
+                                <div class="server_map_image">
+                                    <img class="map" ondrag="return false" ondragstart="return false" id="server-map-image-6" src="//cs2-moon.ru/storage/cache/img/maps/730/-.jpg" alt="" title="">
+                                </div>
+                                <div class="top_server_block">
+                                    <div class="server_info_block">
+                                        <div class="server_name_ip copybtn3" id="copy_btn_6" data-clipboard-text="" data-tippy-content="Скопировать IP" data-tippy-placement="right">
+                                                                                        <div class="server_name_custom" id="server-name-6">Загружается</div>
+                                        </div>
+                                        <div class="server_players_mapname">
+                                            <div class="server_players_block">
+                                                <div id="server-players-6">0/0</div>
+                                            </div>
+                                            <div class="server_map_name" id="server-map-6">Загружается</div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div style="position: absolute;">
+                                            <div class="progress_server_block">
+                                                <div class="progress">
+                                                    <div class="progress-value" id="progess-formula-6"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="server_button play" id="6" onclick="get_players_data(id)" href="javascript:void(0);">
+                                            <svg viewBox="0 0 384 512">
+                                                <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <div class="server_block" id="server-mode-7">
+                                <div class="server_map_image">
+                                    <img class="map" ondrag="return false" ondragstart="return false" id="server-map-image-7" src="//cs2-moon.ru/storage/cache/img/maps/730/-.jpg" alt="" title="">
+                                </div>
+                                <div class="top_server_block">
+                                    <div class="server_info_block">
+                                        <div class="server_name_ip copybtn3" id="copy_btn_7" data-clipboard-text="" data-tippy-content="Скопировать IP" data-tippy-placement="right">
+                                                                                        <div class="server_name_custom" id="server-name-7">Загружается</div>
+                                        </div>
+                                        <div class="server_players_mapname">
+                                            <div class="server_players_block">
+                                                <div id="server-players-7">0/0</div>
+                                            </div>
+                                            <div class="server_map_name" id="server-map-7">Загружается</div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div style="position: absolute;">
+                                            <div class="progress_server_block">
+                                                <div class="progress">
+                                                    <div class="progress-value" id="progess-formula-7"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="server_button play" id="7" onclick="get_players_data(id)" href="javascript:void(0);">
+                                            <svg viewBox="0 0 384 512">
+                                                <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                                            </div>
+                </div>
+            </div>
+            <div id="home-stats">
+            <div class="image-slider swiper">
+                    <div class="image-slider__wrapper swiper-wrapper">
+                                                    <div class="image-slider__slide swiper-slide">
+                                <div class="image-slider__image">
+                                    <p data-swiper-parallax="-100" data-swiper-parallax-duration="800">Открывай кейсы каждый день, и получай призы!</p>
+                                    <h3 data-swiper-parallax="-200" data-swiper-parallax-duration="800">Кейсы</h3>
+                                                                            <div data-swiper-parallax-y="-40" data-swiper-parallax-opacity="0.5" class="swiper_btn" onclick="window.open('/cases','_blank')">
+                                            Перейти                                            <svg x="0" y="0" viewBox="0 0 512 512" xml:space="preserve">
+                                                <g>
+                                                    <path d="M512 40v432a40 40 0 0 1-80 0V136.568L68.284 500.285a40 40 0 0 1-56.569-56.569L375.432 80H40a40 40 0 0 1 0-80h432a40 40 0 0 1 40 40z"></path>
+                                                </g>
+                                            </svg>
+                                            <div class="swiper_action_svg"></div>
+                                        </div>
+                                                                        <img src="//cs2-moon.ru/app/modules/module_block_main_banner_slider/assets/img/6803efbfd0fa8.png" loading="lazy" alt="">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                            </div>
+                                            </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-buttons"></div>
+                    <div class="autoplay-progress">
+                        <svg viewBox="0 0 48 48">
+                            <circle cx="24" cy="24" r="20"></circle>
+                        </svg>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="home-block-top3">
+                    <div class="card" style="width: 100%;">
+                        <div class="card-header">
+                            <h5 class="badge">Топ поддерживающих</h5>
+                        </div>
+                        <div class="card-container">
+                            <div class="top3lk-grid">
+                                                                <script>CheckAvatar = 0; if (CheckAvatar == 1) { avatar.push("76561199010780040"); }</script>                                    <a class="top3-lk-block" href="/profiles/76561199010780040/">
+                                        <img class="home_avatar_frame" src="https://cdn.akamai.steamstatic.com/steamcommunity/public/images/items/601220/4957cc68eec4c2d9ee1df6de65f073951d1e94ee.png" id="frame" frameid="76561199010780040" alt="">
+                                        <img class="players" id="76561199010780040" src="https://avatars.steamstatic.com/66f07a59f42429d6d3215b6f4631bd9ba8c66ed1_full.jpg" loading="lazy" alt="profiles">
+                                        <div class="top3-lk-block-info">
+                                            <b>НЯМНЯМ<span class="top_donater_1">#1</span></b>
+                                                                                    </div>
+                                    </a>
+                                <script>CheckAvatar = 0; if (CheckAvatar == 1) { avatar.push("76561199200455825"); }</script>                                    <a class="top3-lk-block" href="/profiles/76561199200455825/">
+                                        <img class="home_avatar_frame" src="https://cdn.akamai.steamstatic.com/steamcommunity/public/images/items/1732740/3fd73db5d33e9b6597e6975eb654e89b89b5db5c.png" id="frame" frameid="76561199200455825" alt="">
+                                        <img class="players" id="76561199200455825" src="https://avatars.steamstatic.com/275555702725a72139aa39b32c6a456c8ac10467_full.jpg" loading="lazy" alt="profiles">
+                                        <div class="top3-lk-block-info">
+                                            <b>Otki_say.<span class="top_donater_2">#2</span></b>
+                                                                                    </div>
+                                    </a>
+                                <script>CheckAvatar = 0; if (CheckAvatar == 1) { avatar.push("76561199824049659"); }</script>                                    <a class="top3-lk-block" href="/profiles/76561199824049659/">
+                                        <img class="home_avatar_frame" src="//cs2-moon.ru/storage/cache/img/avatars/1_frame.png" id="frame" frameid="76561199824049659" alt="">
+                                        <img class="players" id="76561199824049659" src="https://avatars.steamstatic.com/f2bb4dd6fe0c836304fdd07b0a6d2cc96c9caeb3_full.jpg" loading="lazy" alt="profiles">
+                                        <div class="top3-lk-block-info">
+                                            <b>Karter.ezz<span class="top_donater_3">#3</span></b>
+                                                                                    </div>
+                                    </a>
+                                                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 100%;">
+                        <div class="card-header">
+                            <h5 class="badge">Топ кланов</h5>
+                        </div>
+                        <div class="card-container">
+                            <div class="top3lk-grid">
+                                                                                                    <a class="top3-lk-block" href="/clans/68/info/">
+                                        <img class="players" id="68" src="/app/modules/module_page_clans/img/avatars/68.webp" loading="lazy" alt="clan">
+                                        <div class="top3-lk-block-info">
+                                            <b>crowned<span class="top_donater_1">#1</span></b>
+                                        </div>
+                                    </a>
+                                                                    <a class="top3-lk-block" href="/clans/69/info/">
+                                        <img class="players" id="69" src="/app/modules/module_page_clans/img/avatars/69.webp" loading="lazy" alt="clan">
+                                        <div class="top3-lk-block-info">
+                                            <b>анлаки<span class="top_donater_2">#2</span></b>
+                                        </div>
+                                    </a>
+                                                                    <a class="top3-lk-block" href="/clans/67/info/">
+                                        <img class="players" id="67" src="/app/modules/module_page_clans/img/avatars/67.webp" loading="lazy" alt="clan">
+                                        <div class="top3-lk-block-info">
+                                            <b>King7<span class="top_donater_3">#3</span></b>
+                                        </div>
+                                    </a>
+                                                            </div>
+                        </div>
+                    </div>
+                </div>
+                                <div class="statistics_grid" style="margin: 15px 0 15px 0;">
+                    <div class="statistics_container statistics_container2">
+                        <div class="statistics_name">Игроков</div>
+                        <div class="statistics_number" id="count">0</div>
+                        <div class="statistics_icon"><svg x="0" y="0" viewBox="0 0 548.505 548.505" xml:space="preserve">
+                            <g>
+                                <g fill-rule="evenodd" clip-rule="evenodd">
+                                    <circle cx="140.327" cy="290.573" r="86.445"></circle>
+                                    <circle cx="408.179" cy="86.572" r="86.445"></circle>
+                                    <path d="M510.255 401.727c0-10.557 8.593-19.1 19.125-19.1 10.557 0 19.125 8.593 19.125 19.15l-.077 76.551c-.051 38.684-31.416 70.048-70.125 70.048H338.002c-10.557 0-19.125-8.568-19.125-19.125s8.568-19.125 19.125-19.125h140.301c17.595 0 31.85-14.255 31.875-31.85zM38.378 146.778c0 10.557-8.593 19.1-19.15 19.1s-19.1-8.593-19.1-19.15l.077-76.551C.23 31.492 31.62.127 70.329.127h191.173c10.557 0 19.125 8.568 19.125 19.125s-8.568 19.125-19.125 19.125H70.329c-17.595 0-31.849 14.254-31.875 31.85zM223.151 365.848c34.833 25.551 57.477 66.785 57.477 113.246 0 19.864-12.521 37.179-35.547 49.087-25.423 13.158-65.05 20.196-104.754 20.196-39.729 0-79.356-7.038-104.78-20.196C12.521 516.273 0 498.958 0 479.094c0-46.461 22.644-87.694 57.477-113.246 20.502 22.542 50.031 36.669 82.85 36.669 32.793.001 62.347-14.126 82.824-36.669zM491.028 161.848c34.833 25.551 57.477 66.785 57.477 113.245 0 19.865-12.521 37.179-35.547 49.087-25.423 13.158-65.051 20.196-104.78 20.196-39.703 0-79.331-7.038-104.754-20.196-23.026-11.908-35.547-29.223-35.547-49.087 0-46.461 22.644-87.695 57.477-113.245 20.477 22.542 50.031 36.669 82.824 36.669 32.819 0 62.348-14.127 82.85-36.669z"></path>
+                                </g>
+                            </g>
+                        </svg></div>
+                    </div>
+                    <div class="statistics_container statistics_container2">
+                        <div class="statistics_name">За 24 часа</div>
+                        <div class="statistics_number" id="count24">0</div>
+                        <div class="statistics_icon"><svg x="0" y="0" viewBox="0 0 1707 1707" xml:space="preserve" fill-rule="evenodd">
+                            <g>
+                                <path d="M1021 1650c-320 0-590-220-665-518H20c-11 0-20-9-20-20s9-20 20-20h328c-7-35-11-71-12-107H73c-26 0-26-40 0-40h263c1-37 5-72 11-107H20c-11 0-20-9-20-20s9-20 20-20h336c36-141 115-265 223-357l-44-72c-31-51 6-120 68-120 29 0 55 16 69 40l39 65c65-33 135-56 209-67V183c-59 0-49 7-49-107 0-11 8-20 20-20h261c11 0 20 9 20 20 0 114 10 107-50 107v104c75 11 146 34 211 67l37-65c35-60 127-49 145 19 6 21 3 42-7 61l-43 74c148 125 242 313 242 522 0 378-308 685-686 685zm23-764 96-167c13-23 48-3 35 20l-97 167c53 51 17 141-57 141-45 0-82-37-82-82 0-55 52-94 105-79zM805 611c-6 0-13-3-17-10l-30-52c-62 39-114 91-153 152l53 31c22 13 2 48-20 35l-53-31c-33 63-53 134-56 209h61c26 0 26 40 0 40h-61c3 75 23 146 56 209l53-31c22-13 42 22 20 35l-53 30c39 62 91 114 153 153l30-53c13-22 48-2 35 20l-31 53c63 33 134 53 209 56v-61c0-26 40-26 40 0v61c75-3 146-23 209-56l-31-53c-13-22 22-42 35-20l31 53c61-39 113-91 152-153l-52-30c-23-13-3-48 20-35l52 31c34-63 53-134 57-209h-62c-26 0-26-40 0-40h62c-3-75-23-146-57-209-13 8-52 33-62 33-21 0-28-27-10-37l52-31c-39-61-91-113-152-152l-31 52c-13 23-48 3-35-20l31-52c-63-34-134-54-209-57v62c0 26-40 26-40 0v-62c-75 3-146 23-209 57l31 52c7 14-2 30-18 30z"></path>
+                            </g>
+                        </svg></div>
+                    </div>
+                    <a href="/store" class="statistics_container statistic__premium">
+                        <div class="statistics_name">VIP игроков</div>
+                        <div class="statistics_number" id="countv">0</div>
+                        <div class="statistics_icon"><svg viewBox="0 0 24 24" ><g><path d="M2.483 15.129 1.266 7.524a1.286 1.286 0 0 1 1.956-1.291l3.813 2.408 3.996-4.58a1.286 1.286 0 0 1 1.938 0l3.996 4.58 3.813-2.408a1.287 1.287 0 0 1 1.956 1.291l-1.217 7.605zm18.794 1.5-.355 2.217a1.821 1.821 0 0 1-1.798 1.534H4.876c-.894 0-1.657-.65-1.798-1.534l-.355-2.217z"></path></g></svg></div>
+                        <div class="prem_icon">
+                            <svg x="0" y="0" viewBox="0 0 512 512"><path d="M512 40v432a40 40 0 0 1-80 0V136.568L68.284 500.285a40 40 0 0 1-56.569-56.569L375.432 80H40a40 40 0 0 1 0-80h432a40 40 0 0 1 40 40z"></path></svg>
+                        </div>
+                    </a>
+                    <div class="statistics_container">
+                        <div class="statistics_name">Банов</div>
+                        <div class="statistics_number" id="countb">0</div>
+                        <div class="statistics_icon"><svg x="0" y="0" viewBox="0 0 48 48" xml:space="preserve">
+                            <g>
+                                <path d="M46 24a21.99 21.99 0 1 0-22 22 22.027 22.027 0 0 0 22-22zm-35.227 8.985a15.988 15.988 0 0 1 22.212-22.212zm4.242 4.242 22.212-22.212a15.988 15.988 0 0 1-22.212 22.212z"></path>
+                            </g>
+                        </svg></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="home-chat">
+            <div class="block-chat-back">
+                <div id="chat_main_content">
+                    <div class="reload-mess"><span class="loader-50px"></span></div>
+                </div>
+                <div class="chat_footer_send">
+                                            <div class="secondary_btn" onclick="location.href='?auth=login'" style="width: 100%;">Авторизируйся, чтобы общаться</div>
+                                    </div>
+            </div>
+            <div class="online_users">
+                <div class="online_users_header">
+                    <span class="online_users_title">Онлайн на сайте</span>
+                                        <span class="online_users_online">54</span>
+                </div>
+                <ul class="online_users_list scroll" id="online_users">
+                    <li><a href='/profiles/76561199069124089/'><img class='ava' data-tippy-content='CLemenZA' src='https://avatars.steamstatic.com/c1948d9cc59177a26afc7057d0788bdf05fefaeb_full.jpg' loading='lazy' alt='profile'></a></li><li><a href='/profiles/76561199501508949/'><img class='ava' data-tippy-content='' src='//cs2-moon.ru/storage/cache/img/avatars/1_avatar.jpg' loading='lazy' alt='profile'></a></li><li><a href='/profiles/76561199578688663/'><img class='ava' data-tippy-content='hap4ga' src='https://avatars.steamstatic.com/7fdfc51dc83781e38a68ba3ae11d47185802734b_full.jpg' loading='lazy' alt='profile'></a></li><li><a href='/profiles/76561199389271447/'><img class='ava' data-tippy-content='-Meloneky 𓆩♡' src='https://avatars.steamstatic.com/e224cdc810c2205754e7d2ac066bdfb26cb1fca9_full.jpg' loading='lazy' alt='profile'></a></li><li><a href='/profiles/76561199634728446/'><img class='ava' data-tippy-content='鯡魚 хохо' src='https://avatars.steamstatic.com/b30cd18d5ff281085bb87ae5603c1267caf8d92f_full.jpg' loading='lazy' alt='profile'></a></li><li><a href='/profiles/76561199639586070/'><img class='ava' data-tippy-content='w 1 z a r  t  y' src='https://avatars.steamstatic.com/ed98ad729ddfb4e7625ece7bf6d3af9b852b888b_full.jpg' loading='lazy' alt='profile'></a></li><li><a href='/profiles/76561199225330461/'><img class='ava' data-tippy-content='morphemoon' src='https://avatars.steamstatic.com/c05f55bbcb23b4c184f54e69406f9f90f6b5193e_full.jpg' loading='lazy' alt='profile'></a></li><li><a href='/profiles/76561199390337426/'><img class='ava' data-tippy-content='ЙОУ?' src='https://avatars.steamstatic.com/600a54e62405d2696730eabca74233adfd9aea7e_full.jpg' loading='lazy' alt='profile'></a></li><li><a href='/profiles/76561198338405534/'><img class='ava' data-tippy-content='-ex1zed' src='https://avatars.steamstatic.com/c1252bdf84a0a0b60f8d4cf29a4380674d91e348_full.jpg' loading='lazy' alt='profile'></a></li><li><a href='/profiles/76561199364742081/'><img class='ava' data-tippy-content='0facabu' src='https://avatars.steamstatic.com/2ec0bc420ebaadba49042b2b1297ce0bc77ae288_full.jpg' loading='lazy' alt='profile'></a></li><li><a href='/profiles/76561199633822548/'><img class='ava' data-tippy-content='geliyo w' src='https://avatars.steamstatic.com/193712c902e6eb85c9298671585360a658ed10d6_full.jpg' loading='lazy' alt='profile'></a></li><li><a href='/profiles/76561199466374861/'><img class='ava' data-tippy-content='-akkeine ?' src='https://avatars.steamstatic.com/ef2e8127a850b22dd9862c86dc5c38f983abaef5_full.jpg' loading='lazy' alt='profile'></a></li><li><a href='/profiles/76561199838951664/'><img class='ava' data-tippy-content='L1berty' src='https://avatars.steamstatic.com/210c0917530784f754d5f6a7d20c3a85eeb9a63b_full.jpg' loading='lazy' alt='profile'></a></li><li><a href='/profiles/76561199031420091/'><img class='ava' data-tippy-content='💕' src='https://avatars.steamstatic.com/234c8ce035c715d4a229ed734784526ee64fc6f2_full.jpg' loading='lazy' alt='profile'></a></li><li><a href='/profiles/76561199696245696/'><img class='ava' data-tippy-content='Симпл на проводе' src='https://avatars.steamstatic.com/d7d64342011d547b71c854a8683b856a86dcd6ac_full.jpg' loading='lazy' alt='profile'></a></li><li><a href='/profiles/76561199200380478/'><img class='ava' data-tippy-content='Ox1z' src='https://avatars.steamstatic.com/ae540d37eef3cfcff194166b7325340a698fe0e0_full.jpg' loading='lazy' alt='profile'></a></li><li><a href='/profiles/76561199433341828/'><img class='ava' data-tippy-content='&amp;times;r&amp;times;' src='https://avatars.steamstatic.com/d748b58e99aa4c260ff3a1117bff694777437266_full.jpg' loading='lazy' alt='profile'></a></li><li><a href='/profiles/76561199833801008/'><img class='ava' data-tippy-content='absolute || kuper' src='https://avatars.steamstatic.com/aedb2dec6fad65741da83b0b269dd430dc969e64_full.jpg' loading='lazy' alt='profile'></a></li><li><a href='/profiles/76561198877869786/'><img class='ava' data-tippy-content='yeager' src='https://avatars.steamstatic.com/265d043506f0654d97a5049f03c3bb5e9018f513_full.jpg' loading='lazy' alt='profile'></a></li><li><a href='/profiles/76561199828909593/'><img class='ava' data-tippy-content='aktimell52' src='https://avatars.steamstatic.com/d7c0eee5572d6f12dd4776079829d07808b1f197_full.jpg' loading='lazy' alt='profile'></a></li><li><a href='/profiles/76561199501272600/'><img class='ava' data-tippy-content='1gnat' src='https://avatars.steamstatic.com/9b43255feda9d1ae52abf5b555d2d78895027627_full.jpg' loading='lazy' alt='profile'></a></li><li><a href='/profiles/76561199228563234/'><img class='ava' data-tippy-content='G.R.I.Z.Z.L.Y' src='https://avatars.steamstatic.com/9ab854c23ad39c58c4a0dcb78a9104a2cd9691d4_full.jpg' loading='lazy' alt='profile'></a></li><li><a href='/profiles/76561199482021638/'><img class='ava' data-tippy-content='мне похуй я долбо' src='https://avatars.steamstatic.com/f7354f36b79f00ccaaa6e0e61949a298fabdb767_full.jpg' loading='lazy' alt='profile'></a></li><li><a href='/profiles/76561199751645526/'><img class='ava' data-tippy-content='#Romchikkof' src='https://avatars.steamstatic.com/600a54e62405d2696730eabca74233adfd9aea7e_full.jpg' loading='lazy' alt='profile'></a></li><li><a href='/profiles/76561199818955351/'><img class='ava' data-tippy-content='meumane' src='https://avatars.steamstatic.com/784f2d8bae6d7e7abb1a822f160dfc63ef5f2c87_full.jpg' loading='lazy' alt='profile'></a></li><li><a href='/profiles/76561198370366729/'><img class='ava' data-tippy-content='' src='//cs2-moon.ru/storage/cache/img/avatars/1_avatar.jpg' loading='lazy' alt='profile'></a></li><li><a href='/profiles/76561199626625145/'><img class='ava' data-tippy-content='Shiro' src='https://avatars.steamstatic.com/34a5e533dd03eabaa4f1a5e51eca00e9e6d87491_full.jpg' loading='lazy' alt='profile'></a></li><li><a href='/profiles/76561199113756733/'><img class='ava' data-tippy-content='Бродяга' src='https://avatars.steamstatic.com/833269fe51a61e64c78c1b5041d81ca2a50933a7_full.jpg' loading='lazy' alt='profile'></a></li><li><a href='/profiles/76561199523071315/'><img class='ava' data-tippy-content='LIM1X' src='https://avatars.steamstatic.com/2b1bdc540b9cb1ed5f7a85e85004c5e2ce66f17e_full.jpg' loading='lazy' alt='profile'></a></li><li><a href='/profiles/76561199663155756/'><img class='ava' data-tippy-content='kpss a3zakm1' src='https://avatars.steamstatic.com/7afd85583c44a37895f1a72d3f1707e68340449e_full.jpg' loading='lazy' alt='profile'></a></li><li><a href='/profiles/76561199040548426/'><img class='ava' data-tippy-content='Frilston' src='https://avatars.steamstatic.com/fb3d5068654a01b43ae0cbc5e6cd770f01c19317_full.jpg' loading='lazy' alt='profile'></a></li><li><a href='/profiles/76561199062699848/'><img class='ava' data-tippy-content='yo' src='https://avatars.steamstatic.com/8e8af6b7708ceacb342ff2a558232fe50330954f_full.jpg' loading='lazy' alt='profile'></a></li><li><a href='/profiles/76561199698252829/'><img class='ava' data-tippy-content='𝕄𝕖𝕝𝕠𝕞𝕒𝕟' src='https://avatars.steamstatic.com/f1bf78ea01805bf32f727772208a3195f984e910_full.jpg' loading='lazy' alt='profile'></a></li><li><a href='/profiles/76561199069417463/'><img class='ava' data-tippy-content='я мертвый?' src='https://avatars.steamstatic.com/1f29c4e63666c3c41deff1f6623d4008b2bc19c6_full.jpg' loading='lazy' alt='profile'></a></li><li><a href='/profiles/76561199003911674/'><img class='ava' data-tippy-content='玲 子-рэйко' src='https://avatars.steamstatic.com/a12fab7adba6437ee5b75cde028e9f3e92c3d9ac_full.jpg' loading='lazy' alt='profile'></a></li><li><a href='/profiles/76561199822470308/'><img class='ava' data-tippy-content='blackberry #5iveGG' src='https://avatars.steamstatic.com/e1fd973d9f40bf0e76718d938a4b6f422d66e403_full.jpg' loading='lazy' alt='profile'></a></li><li><a href='/profiles/76561199556410181/'><img class='ava' data-tippy-content='󠁳' src='https://avatars.steamstatic.com/ccbf6948e05326fbe2d5334893eddc557cec5bda_full.jpg' loading='lazy' alt='profile'></a></li><li><a href='/profiles/76561199424778116/'><img class='ava' data-tippy-content='code10' src='https://avatars.steamstatic.com/4a04790b69185255fe7cfd791fc6465ca6e24d69_full.jpg' loading='lazy' alt='profile'></a></li><li><a href='/profiles/76561199434180893/'><img class='ava' data-tippy-content='ASDASDAS666' src='https://avatars.steamstatic.com/6e711777c1b85c2433a4e51fb7b38f7bb0f90f14_full.jpg' loading='lazy' alt='profile'></a></li><li><a href='/profiles/76561199405619775/'><img class='ava' data-tippy-content='СЕКС ИНСТРУКТ' src='https://avatars.steamstatic.com/cbe3d1d502be004e37263b7edf78cd517ff8794b_full.jpg' loading='lazy' alt='profile'></a></li><li><a href='/profiles/76561199686746504/'><img class='ava' data-tippy-content='ЧЕПУХА' src='https://avatars.steamstatic.com/13e32cf4802617e230d7427f3cb4e2a94ccb6fde_full.jpg' loading='lazy' alt='profile'></a></li><li><a href='/profiles/76561198198986786/'><img class='ava' data-tippy-content='-9999aura' src='https://avatars.steamstatic.com/050388b6ed430467d0d73710557ae2ffcccac4e1_full.jpg' loading='lazy' alt='profile'></a></li><li><a href='/profiles/76561199535080029/'><img class='ava' data-tippy-content='sexmashina' src='https://avatars.steamstatic.com/8bcb9470731f4bd1d8b3c75bd585f82ce95c8c49_full.jpg' loading='lazy' alt='profile'></a></li><li><a href='/profiles/76561199828240268/'><img class='ava' data-tippy-content='Shpion' src='https://avatars.steamstatic.com/08f365cb2b49dbb454f5b6b0ad617830dc27ad2c_full.jpg' loading='lazy' alt='profile'></a></li><li><a href='/profiles/76561199490133782/'><img class='ava' data-tippy-content='𝓜𝓪𝓲' src='https://avatars.steamstatic.com/f980fef4cd0b3021a4596c0fadfab1c6dec02eaa_full.jpg' loading='lazy' alt='profile'></a></li><li><a href='/profiles/76561199489487093/'><img class='ava' data-tippy-content='ஜ۩ஜ' src='https://avatars.steamstatic.com/a35948bd4a98ab949fb96f69085daf1813922711_full.jpg' loading='lazy' alt='profile'></a></li><li><a href='/profiles/76561199030696082/'><img class='ava' data-tippy-content='osaka' src='https://avatars.steamstatic.com/7aad726a068c8a262a17d414c74f0239e1a4413d_full.jpg' loading='lazy' alt='profile'></a></li><li><a href='/profiles/76561199806336266/'><img class='ava' data-tippy-content='免費найтивыход免費' src='https://avatars.steamstatic.com/5057930086375fa5a8895e6716ad165f7b43db54_full.jpg' loading='lazy' alt='profile'></a></li><li><a href='/profiles/76561198256013565/'><img class='ava' data-tippy-content='Убийца 007' src='https://avatars.steamstatic.com/82049dbbe85d8c9b98d6b91f046b30026dc79427_full.jpg' loading='lazy' alt='profile'></a></li><li><a href='/profiles/76561199015086145/'><img class='ava' data-tippy-content='DIRTYPEEK | D3dInSIDE' src='https://avatars.steamstatic.com/aa2853302a76c7cb775d511ed01a4f3079205b7c_full.jpg' loading='lazy' alt='profile'></a></li><li><a href='/profiles/76561199364998475/'><img class='ava' data-tippy-content='Jamkao' src='https://avatars.steamstatic.com/ad6d785df77dd0f1a4f664c537f009eb0bbd673d_full.jpg' loading='lazy' alt='profile'></a></li><li><a href='/profiles/76561199389181885/'><img class='ava' data-tippy-content='d1st0rt3dm3m0r13s' src='https://avatars.steamstatic.com/040229d0872b01ca88e22d6485c202a1eabe3b94_full.jpg' loading='lazy' alt='profile'></a></li><li><a href='/profiles/76561198067390475/'><img class='ava' data-tippy-content='white' src='https://avatars.steamstatic.com/e4e9e7e95b699d0551bb0a03290eb83cf29e6b98_full.jpg' loading='lazy' alt='profile'></a></li><li><a href='/profiles/76561198099600843/'><img class='ava' data-tippy-content='xdree' src='https://avatars.steamstatic.com/8f8506a74f76c83ad9868408c86dce3d00834b6e_full.jpg' loading='lazy' alt='profile'></a></li>                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="server-players-online-0" class="modal-window-server modal_players_online">
+        <div class="modal-card">
+            <div class="modal-card__header">
+                <a title="" id="0" onclick="close_modal(id)" href="javascript:void(0);" class="modal-btn__close">
+                    <svg viewBox="0 0 320 512">
+                        <path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z" />
+                    </svg>
+                </a>
+                <div class="cover server-modal__bg">
+                    <img ondrag="return false" ondragstart="return false" id="server-map-image-modal-0" src="//cs2-moon.ru/storage/cache/img/maps/730/-.jpg" alt="" title="">
+                    <div class="shadow"></div>
+                </div>
+                <div class="server-modal__header">
+                    <div class="map_name_block">
+                        <div class="server_map_now_play_text">
+                            Сейчас играется карта                        </div>
+                        <div class="server_map_name_second" id="server-maptwo-0">
+                            Загружается                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mon_header">
+                <span class="mon_player_name">Игроки <span id="server-players-modal-0" class="players_modal" style="display: none;">0/0</span></span>
+                <span>Время игры</span>
+            </div>
+            <ul class="mon_list_body mon_list_scroll no-scrollbar" id="players_online_0"></ul>
+            <div class="modal-card__footer">
+                <a class="secondary_btn modal-btn_copy btn-clipboard copybtn3 w100" id="copy_btnsecond_0" data-clipboard-text="">
+                    <svg viewBox="0 0 512 512">
+                        <path d="M224 0c-35.3 0-64 28.7-64 64V288c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H224zM64 160c-35.3 0-64 28.7-64 64V448c0 35.3 28.7 64 64 64H288c35.3 0 64-28.7 64-64V384H288v64H64V224h64V160H64z" />
+                    </svg>
+                    Скопировать IP                </a>
+                <a class="secondary_btn modal-btn w100 non_mob" id="connect_server_0">
+                    <svg viewBox="0 0 496 512">
+                        <path d="M496 256c0 137-111.2 248-248.4 248-113.8 0-209.6-76.3-239-180.4l95.2 39.3c6.4 32.1 34.9 56.4 68.9 56.4 39.2 0 71.9-32.4 70.2-73.5l84.5-60.2c52.1 1.3 95.8-40.9 95.8-93.5 0-51.6-42-93.5-93.7-93.5s-93.7 42-93.7 93.5v1.2L176.6 279c-15.5-.9-30.7 3.4-43.5 12.1L0 236.1C10.2 108.4 117.1 8 247.6 8 384.8 8 496 119 496 256zM155.7 384.3l-30.5-12.6a52.79 52.79 0 0 0 27.2 25.8c26.9 11.2 57.8-1.6 69-28.4 5.4-13 5.5-27.3.1-40.3-5.4-13-15.5-23.2-28.5-28.6-12.9-5.4-26.7-5.2-38.9-.6l31.5 13c19.8 8.2 29.2 30.9 20.9 50.7-8.3 19.9-31 29.2-50.8 21zm173.8-129.9c-34.4 0-62.4-28-62.4-62.3s28-62.3 62.4-62.3 62.4 28 62.4 62.3-27.9 62.3-62.4 62.3zm.1-15.6c25.9 0 46.9-21 46.9-46.8 0-25.9-21-46.8-46.9-46.8s-46.9 21-46.9 46.8c.1 25.8 21.1 46.8 46.9 46.8z" />
+                    </svg>
+                    Присоединиться                </a>
+            </div>
+        </div>
+    </div>
+    <div id="server-players-online-1" class="modal-window-server modal_players_online">
+        <div class="modal-card">
+            <div class="modal-card__header">
+                <a title="" id="1" onclick="close_modal(id)" href="javascript:void(0);" class="modal-btn__close">
+                    <svg viewBox="0 0 320 512">
+                        <path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z" />
+                    </svg>
+                </a>
+                <div class="cover server-modal__bg">
+                    <img ondrag="return false" ondragstart="return false" id="server-map-image-modal-1" src="//cs2-moon.ru/storage/cache/img/maps/730/-.jpg" alt="" title="">
+                    <div class="shadow"></div>
+                </div>
+                <div class="server-modal__header">
+                    <div class="map_name_block">
+                        <div class="server_map_now_play_text">
+                            Сейчас играется карта                        </div>
+                        <div class="server_map_name_second" id="server-maptwo-1">
+                            Загружается                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mon_header">
+                <span class="mon_player_name">Игроки <span id="server-players-modal-1" class="players_modal" style="display: none;">0/0</span></span>
+                <span>Время игры</span>
+            </div>
+            <ul class="mon_list_body mon_list_scroll no-scrollbar" id="players_online_1"></ul>
+            <div class="modal-card__footer">
+                <a class="secondary_btn modal-btn_copy btn-clipboard copybtn3 w100" id="copy_btnsecond_1" data-clipboard-text="">
+                    <svg viewBox="0 0 512 512">
+                        <path d="M224 0c-35.3 0-64 28.7-64 64V288c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H224zM64 160c-35.3 0-64 28.7-64 64V448c0 35.3 28.7 64 64 64H288c35.3 0 64-28.7 64-64V384H288v64H64V224h64V160H64z" />
+                    </svg>
+                    Скопировать IP                </a>
+                <a class="secondary_btn modal-btn w100 non_mob" id="connect_server_1">
+                    <svg viewBox="0 0 496 512">
+                        <path d="M496 256c0 137-111.2 248-248.4 248-113.8 0-209.6-76.3-239-180.4l95.2 39.3c6.4 32.1 34.9 56.4 68.9 56.4 39.2 0 71.9-32.4 70.2-73.5l84.5-60.2c52.1 1.3 95.8-40.9 95.8-93.5 0-51.6-42-93.5-93.7-93.5s-93.7 42-93.7 93.5v1.2L176.6 279c-15.5-.9-30.7 3.4-43.5 12.1L0 236.1C10.2 108.4 117.1 8 247.6 8 384.8 8 496 119 496 256zM155.7 384.3l-30.5-12.6a52.79 52.79 0 0 0 27.2 25.8c26.9 11.2 57.8-1.6 69-28.4 5.4-13 5.5-27.3.1-40.3-5.4-13-15.5-23.2-28.5-28.6-12.9-5.4-26.7-5.2-38.9-.6l31.5 13c19.8 8.2 29.2 30.9 20.9 50.7-8.3 19.9-31 29.2-50.8 21zm173.8-129.9c-34.4 0-62.4-28-62.4-62.3s28-62.3 62.4-62.3 62.4 28 62.4 62.3-27.9 62.3-62.4 62.3zm.1-15.6c25.9 0 46.9-21 46.9-46.8 0-25.9-21-46.8-46.9-46.8s-46.9 21-46.9 46.8c.1 25.8 21.1 46.8 46.9 46.8z" />
+                    </svg>
+                    Присоединиться                </a>
+            </div>
+        </div>
+    </div>
+    <div id="server-players-online-2" class="modal-window-server modal_players_online">
+        <div class="modal-card">
+            <div class="modal-card__header">
+                <a title="" id="2" onclick="close_modal(id)" href="javascript:void(0);" class="modal-btn__close">
+                    <svg viewBox="0 0 320 512">
+                        <path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z" />
+                    </svg>
+                </a>
+                <div class="cover server-modal__bg">
+                    <img ondrag="return false" ondragstart="return false" id="server-map-image-modal-2" src="//cs2-moon.ru/storage/cache/img/maps/730/-.jpg" alt="" title="">
+                    <div class="shadow"></div>
+                </div>
+                <div class="server-modal__header">
+                    <div class="map_name_block">
+                        <div class="server_map_now_play_text">
+                            Сейчас играется карта                        </div>
+                        <div class="server_map_name_second" id="server-maptwo-2">
+                            Загружается                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mon_header">
+                <span class="mon_player_name">Игроки <span id="server-players-modal-2" class="players_modal" style="display: none;">0/0</span></span>
+                <span>Время игры</span>
+            </div>
+            <ul class="mon_list_body mon_list_scroll no-scrollbar" id="players_online_2"></ul>
+            <div class="modal-card__footer">
+                <a class="secondary_btn modal-btn_copy btn-clipboard copybtn3 w100" id="copy_btnsecond_2" data-clipboard-text="">
+                    <svg viewBox="0 0 512 512">
+                        <path d="M224 0c-35.3 0-64 28.7-64 64V288c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H224zM64 160c-35.3 0-64 28.7-64 64V448c0 35.3 28.7 64 64 64H288c35.3 0 64-28.7 64-64V384H288v64H64V224h64V160H64z" />
+                    </svg>
+                    Скопировать IP                </a>
+                <a class="secondary_btn modal-btn w100 non_mob" id="connect_server_2">
+                    <svg viewBox="0 0 496 512">
+                        <path d="M496 256c0 137-111.2 248-248.4 248-113.8 0-209.6-76.3-239-180.4l95.2 39.3c6.4 32.1 34.9 56.4 68.9 56.4 39.2 0 71.9-32.4 70.2-73.5l84.5-60.2c52.1 1.3 95.8-40.9 95.8-93.5 0-51.6-42-93.5-93.7-93.5s-93.7 42-93.7 93.5v1.2L176.6 279c-15.5-.9-30.7 3.4-43.5 12.1L0 236.1C10.2 108.4 117.1 8 247.6 8 384.8 8 496 119 496 256zM155.7 384.3l-30.5-12.6a52.79 52.79 0 0 0 27.2 25.8c26.9 11.2 57.8-1.6 69-28.4 5.4-13 5.5-27.3.1-40.3-5.4-13-15.5-23.2-28.5-28.6-12.9-5.4-26.7-5.2-38.9-.6l31.5 13c19.8 8.2 29.2 30.9 20.9 50.7-8.3 19.9-31 29.2-50.8 21zm173.8-129.9c-34.4 0-62.4-28-62.4-62.3s28-62.3 62.4-62.3 62.4 28 62.4 62.3-27.9 62.3-62.4 62.3zm.1-15.6c25.9 0 46.9-21 46.9-46.8 0-25.9-21-46.8-46.9-46.8s-46.9 21-46.9 46.8c.1 25.8 21.1 46.8 46.9 46.8z" />
+                    </svg>
+                    Присоединиться                </a>
+            </div>
+        </div>
+    </div>
+    <div id="server-players-online-3" class="modal-window-server modal_players_online">
+        <div class="modal-card">
+            <div class="modal-card__header">
+                <a title="" id="3" onclick="close_modal(id)" href="javascript:void(0);" class="modal-btn__close">
+                    <svg viewBox="0 0 320 512">
+                        <path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z" />
+                    </svg>
+                </a>
+                <div class="cover server-modal__bg">
+                    <img ondrag="return false" ondragstart="return false" id="server-map-image-modal-3" src="//cs2-moon.ru/storage/cache/img/maps/730/-.jpg" alt="" title="">
+                    <div class="shadow"></div>
+                </div>
+                <div class="server-modal__header">
+                    <div class="map_name_block">
+                        <div class="server_map_now_play_text">
+                            Сейчас играется карта                        </div>
+                        <div class="server_map_name_second" id="server-maptwo-3">
+                            Загружается                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mon_header">
+                <span class="mon_player_name">Игроки <span id="server-players-modal-3" class="players_modal" style="display: none;">0/0</span></span>
+                <span>Время игры</span>
+            </div>
+            <ul class="mon_list_body mon_list_scroll no-scrollbar" id="players_online_3"></ul>
+            <div class="modal-card__footer">
+                <a class="secondary_btn modal-btn_copy btn-clipboard copybtn3 w100" id="copy_btnsecond_3" data-clipboard-text="">
+                    <svg viewBox="0 0 512 512">
+                        <path d="M224 0c-35.3 0-64 28.7-64 64V288c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H224zM64 160c-35.3 0-64 28.7-64 64V448c0 35.3 28.7 64 64 64H288c35.3 0 64-28.7 64-64V384H288v64H64V224h64V160H64z" />
+                    </svg>
+                    Скопировать IP                </a>
+                <a class="secondary_btn modal-btn w100 non_mob" id="connect_server_3">
+                    <svg viewBox="0 0 496 512">
+                        <path d="M496 256c0 137-111.2 248-248.4 248-113.8 0-209.6-76.3-239-180.4l95.2 39.3c6.4 32.1 34.9 56.4 68.9 56.4 39.2 0 71.9-32.4 70.2-73.5l84.5-60.2c52.1 1.3 95.8-40.9 95.8-93.5 0-51.6-42-93.5-93.7-93.5s-93.7 42-93.7 93.5v1.2L176.6 279c-15.5-.9-30.7 3.4-43.5 12.1L0 236.1C10.2 108.4 117.1 8 247.6 8 384.8 8 496 119 496 256zM155.7 384.3l-30.5-12.6a52.79 52.79 0 0 0 27.2 25.8c26.9 11.2 57.8-1.6 69-28.4 5.4-13 5.5-27.3.1-40.3-5.4-13-15.5-23.2-28.5-28.6-12.9-5.4-26.7-5.2-38.9-.6l31.5 13c19.8 8.2 29.2 30.9 20.9 50.7-8.3 19.9-31 29.2-50.8 21zm173.8-129.9c-34.4 0-62.4-28-62.4-62.3s28-62.3 62.4-62.3 62.4 28 62.4 62.3-27.9 62.3-62.4 62.3zm.1-15.6c25.9 0 46.9-21 46.9-46.8 0-25.9-21-46.8-46.9-46.8s-46.9 21-46.9 46.8c.1 25.8 21.1 46.8 46.9 46.8z" />
+                    </svg>
+                    Присоединиться                </a>
+            </div>
+        </div>
+    </div>
+    <div id="server-players-online-4" class="modal-window-server modal_players_online">
+        <div class="modal-card">
+            <div class="modal-card__header">
+                <a title="" id="4" onclick="close_modal(id)" href="javascript:void(0);" class="modal-btn__close">
+                    <svg viewBox="0 0 320 512">
+                        <path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z" />
+                    </svg>
+                </a>
+                <div class="cover server-modal__bg">
+                    <img ondrag="return false" ondragstart="return false" id="server-map-image-modal-4" src="//cs2-moon.ru/storage/cache/img/maps/730/-.jpg" alt="" title="">
+                    <div class="shadow"></div>
+                </div>
+                <div class="server-modal__header">
+                    <div class="map_name_block">
+                        <div class="server_map_now_play_text">
+                            Сейчас играется карта                        </div>
+                        <div class="server_map_name_second" id="server-maptwo-4">
+                            Загружается                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mon_header">
+                <span class="mon_player_name">Игроки <span id="server-players-modal-4" class="players_modal" style="display: none;">0/0</span></span>
+                <span>Время игры</span>
+            </div>
+            <ul class="mon_list_body mon_list_scroll no-scrollbar" id="players_online_4"></ul>
+            <div class="modal-card__footer">
+                <a class="secondary_btn modal-btn_copy btn-clipboard copybtn3 w100" id="copy_btnsecond_4" data-clipboard-text="">
+                    <svg viewBox="0 0 512 512">
+                        <path d="M224 0c-35.3 0-64 28.7-64 64V288c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H224zM64 160c-35.3 0-64 28.7-64 64V448c0 35.3 28.7 64 64 64H288c35.3 0 64-28.7 64-64V384H288v64H64V224h64V160H64z" />
+                    </svg>
+                    Скопировать IP                </a>
+                <a class="secondary_btn modal-btn w100 non_mob" id="connect_server_4">
+                    <svg viewBox="0 0 496 512">
+                        <path d="M496 256c0 137-111.2 248-248.4 248-113.8 0-209.6-76.3-239-180.4l95.2 39.3c6.4 32.1 34.9 56.4 68.9 56.4 39.2 0 71.9-32.4 70.2-73.5l84.5-60.2c52.1 1.3 95.8-40.9 95.8-93.5 0-51.6-42-93.5-93.7-93.5s-93.7 42-93.7 93.5v1.2L176.6 279c-15.5-.9-30.7 3.4-43.5 12.1L0 236.1C10.2 108.4 117.1 8 247.6 8 384.8 8 496 119 496 256zM155.7 384.3l-30.5-12.6a52.79 52.79 0 0 0 27.2 25.8c26.9 11.2 57.8-1.6 69-28.4 5.4-13 5.5-27.3.1-40.3-5.4-13-15.5-23.2-28.5-28.6-12.9-5.4-26.7-5.2-38.9-.6l31.5 13c19.8 8.2 29.2 30.9 20.9 50.7-8.3 19.9-31 29.2-50.8 21zm173.8-129.9c-34.4 0-62.4-28-62.4-62.3s28-62.3 62.4-62.3 62.4 28 62.4 62.3-27.9 62.3-62.4 62.3zm.1-15.6c25.9 0 46.9-21 46.9-46.8 0-25.9-21-46.8-46.9-46.8s-46.9 21-46.9 46.8c.1 25.8 21.1 46.8 46.9 46.8z" />
+                    </svg>
+                    Присоединиться                </a>
+            </div>
+        </div>
+    </div>
+    <div id="server-players-online-5" class="modal-window-server modal_players_online">
+        <div class="modal-card">
+            <div class="modal-card__header">
+                <a title="" id="5" onclick="close_modal(id)" href="javascript:void(0);" class="modal-btn__close">
+                    <svg viewBox="0 0 320 512">
+                        <path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z" />
+                    </svg>
+                </a>
+                <div class="cover server-modal__bg">
+                    <img ondrag="return false" ondragstart="return false" id="server-map-image-modal-5" src="//cs2-moon.ru/storage/cache/img/maps/730/-.jpg" alt="" title="">
+                    <div class="shadow"></div>
+                </div>
+                <div class="server-modal__header">
+                    <div class="map_name_block">
+                        <div class="server_map_now_play_text">
+                            Сейчас играется карта                        </div>
+                        <div class="server_map_name_second" id="server-maptwo-5">
+                            Загружается                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mon_header">
+                <span class="mon_player_name">Игроки <span id="server-players-modal-5" class="players_modal" style="display: none;">0/0</span></span>
+                <span>Время игры</span>
+            </div>
+            <ul class="mon_list_body mon_list_scroll no-scrollbar" id="players_online_5"></ul>
+            <div class="modal-card__footer">
+                <a class="secondary_btn modal-btn_copy btn-clipboard copybtn3 w100" id="copy_btnsecond_5" data-clipboard-text="">
+                    <svg viewBox="0 0 512 512">
+                        <path d="M224 0c-35.3 0-64 28.7-64 64V288c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H224zM64 160c-35.3 0-64 28.7-64 64V448c0 35.3 28.7 64 64 64H288c35.3 0 64-28.7 64-64V384H288v64H64V224h64V160H64z" />
+                    </svg>
+                    Скопировать IP                </a>
+                <a class="secondary_btn modal-btn w100 non_mob" id="connect_server_5">
+                    <svg viewBox="0 0 496 512">
+                        <path d="M496 256c0 137-111.2 248-248.4 248-113.8 0-209.6-76.3-239-180.4l95.2 39.3c6.4 32.1 34.9 56.4 68.9 56.4 39.2 0 71.9-32.4 70.2-73.5l84.5-60.2c52.1 1.3 95.8-40.9 95.8-93.5 0-51.6-42-93.5-93.7-93.5s-93.7 42-93.7 93.5v1.2L176.6 279c-15.5-.9-30.7 3.4-43.5 12.1L0 236.1C10.2 108.4 117.1 8 247.6 8 384.8 8 496 119 496 256zM155.7 384.3l-30.5-12.6a52.79 52.79 0 0 0 27.2 25.8c26.9 11.2 57.8-1.6 69-28.4 5.4-13 5.5-27.3.1-40.3-5.4-13-15.5-23.2-28.5-28.6-12.9-5.4-26.7-5.2-38.9-.6l31.5 13c19.8 8.2 29.2 30.9 20.9 50.7-8.3 19.9-31 29.2-50.8 21zm173.8-129.9c-34.4 0-62.4-28-62.4-62.3s28-62.3 62.4-62.3 62.4 28 62.4 62.3-27.9 62.3-62.4 62.3zm.1-15.6c25.9 0 46.9-21 46.9-46.8 0-25.9-21-46.8-46.9-46.8s-46.9 21-46.9 46.8c.1 25.8 21.1 46.8 46.9 46.8z" />
+                    </svg>
+                    Присоединиться                </a>
+            </div>
+        </div>
+    </div>
+    <div id="server-players-online-6" class="modal-window-server modal_players_online">
+        <div class="modal-card">
+            <div class="modal-card__header">
+                <a title="" id="6" onclick="close_modal(id)" href="javascript:void(0);" class="modal-btn__close">
+                    <svg viewBox="0 0 320 512">
+                        <path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z" />
+                    </svg>
+                </a>
+                <div class="cover server-modal__bg">
+                    <img ondrag="return false" ondragstart="return false" id="server-map-image-modal-6" src="//cs2-moon.ru/storage/cache/img/maps/730/-.jpg" alt="" title="">
+                    <div class="shadow"></div>
+                </div>
+                <div class="server-modal__header">
+                    <div class="map_name_block">
+                        <div class="server_map_now_play_text">
+                            Сейчас играется карта                        </div>
+                        <div class="server_map_name_second" id="server-maptwo-6">
+                            Загружается                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mon_header">
+                <span class="mon_player_name">Игроки <span id="server-players-modal-6" class="players_modal" style="display: none;">0/0</span></span>
+                <span>Время игры</span>
+            </div>
+            <ul class="mon_list_body mon_list_scroll no-scrollbar" id="players_online_6"></ul>
+            <div class="modal-card__footer">
+                <a class="secondary_btn modal-btn_copy btn-clipboard copybtn3 w100" id="copy_btnsecond_6" data-clipboard-text="">
+                    <svg viewBox="0 0 512 512">
+                        <path d="M224 0c-35.3 0-64 28.7-64 64V288c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H224zM64 160c-35.3 0-64 28.7-64 64V448c0 35.3 28.7 64 64 64H288c35.3 0 64-28.7 64-64V384H288v64H64V224h64V160H64z" />
+                    </svg>
+                    Скопировать IP                </a>
+                <a class="secondary_btn modal-btn w100 non_mob" id="connect_server_6">
+                    <svg viewBox="0 0 496 512">
+                        <path d="M496 256c0 137-111.2 248-248.4 248-113.8 0-209.6-76.3-239-180.4l95.2 39.3c6.4 32.1 34.9 56.4 68.9 56.4 39.2 0 71.9-32.4 70.2-73.5l84.5-60.2c52.1 1.3 95.8-40.9 95.8-93.5 0-51.6-42-93.5-93.7-93.5s-93.7 42-93.7 93.5v1.2L176.6 279c-15.5-.9-30.7 3.4-43.5 12.1L0 236.1C10.2 108.4 117.1 8 247.6 8 384.8 8 496 119 496 256zM155.7 384.3l-30.5-12.6a52.79 52.79 0 0 0 27.2 25.8c26.9 11.2 57.8-1.6 69-28.4 5.4-13 5.5-27.3.1-40.3-5.4-13-15.5-23.2-28.5-28.6-12.9-5.4-26.7-5.2-38.9-.6l31.5 13c19.8 8.2 29.2 30.9 20.9 50.7-8.3 19.9-31 29.2-50.8 21zm173.8-129.9c-34.4 0-62.4-28-62.4-62.3s28-62.3 62.4-62.3 62.4 28 62.4 62.3-27.9 62.3-62.4 62.3zm.1-15.6c25.9 0 46.9-21 46.9-46.8 0-25.9-21-46.8-46.9-46.8s-46.9 21-46.9 46.8c.1 25.8 21.1 46.8 46.9 46.8z" />
+                    </svg>
+                    Присоединиться                </a>
+            </div>
+        </div>
+    </div>
+    <div id="server-players-online-7" class="modal-window-server modal_players_online">
+        <div class="modal-card">
+            <div class="modal-card__header">
+                <a title="" id="7" onclick="close_modal(id)" href="javascript:void(0);" class="modal-btn__close">
+                    <svg viewBox="0 0 320 512">
+                        <path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z" />
+                    </svg>
+                </a>
+                <div class="cover server-modal__bg">
+                    <img ondrag="return false" ondragstart="return false" id="server-map-image-modal-7" src="//cs2-moon.ru/storage/cache/img/maps/730/-.jpg" alt="" title="">
+                    <div class="shadow"></div>
+                </div>
+                <div class="server-modal__header">
+                    <div class="map_name_block">
+                        <div class="server_map_now_play_text">
+                            Сейчас играется карта                        </div>
+                        <div class="server_map_name_second" id="server-maptwo-7">
+                            Загружается                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mon_header">
+                <span class="mon_player_name">Игроки <span id="server-players-modal-7" class="players_modal" style="display: none;">0/0</span></span>
+                <span>Время игры</span>
+            </div>
+            <ul class="mon_list_body mon_list_scroll no-scrollbar" id="players_online_7"></ul>
+            <div class="modal-card__footer">
+                <a class="secondary_btn modal-btn_copy btn-clipboard copybtn3 w100" id="copy_btnsecond_7" data-clipboard-text="">
+                    <svg viewBox="0 0 512 512">
+                        <path d="M224 0c-35.3 0-64 28.7-64 64V288c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H224zM64 160c-35.3 0-64 28.7-64 64V448c0 35.3 28.7 64 64 64H288c35.3 0 64-28.7 64-64V384H288v64H64V224h64V160H64z" />
+                    </svg>
+                    Скопировать IP                </a>
+                <a class="secondary_btn modal-btn w100 non_mob" id="connect_server_7">
+                    <svg viewBox="0 0 496 512">
+                        <path d="M496 256c0 137-111.2 248-248.4 248-113.8 0-209.6-76.3-239-180.4l95.2 39.3c6.4 32.1 34.9 56.4 68.9 56.4 39.2 0 71.9-32.4 70.2-73.5l84.5-60.2c52.1 1.3 95.8-40.9 95.8-93.5 0-51.6-42-93.5-93.7-93.5s-93.7 42-93.7 93.5v1.2L176.6 279c-15.5-.9-30.7 3.4-43.5 12.1L0 236.1C10.2 108.4 117.1 8 247.6 8 384.8 8 496 119 496 256zM155.7 384.3l-30.5-12.6a52.79 52.79 0 0 0 27.2 25.8c26.9 11.2 57.8-1.6 69-28.4 5.4-13 5.5-27.3.1-40.3-5.4-13-15.5-23.2-28.5-28.6-12.9-5.4-26.7-5.2-38.9-.6l31.5 13c19.8 8.2 29.2 30.9 20.9 50.7-8.3 19.9-31 29.2-50.8 21zm173.8-129.9c-34.4 0-62.4-28-62.4-62.3s28-62.3 62.4-62.3 62.4 28 62.4 62.3-27.9 62.3-62.4 62.3zm.1-15.6c25.9 0 46.9-21 46.9-46.8 0-25.9-21-46.8-46.9-46.8s-46.9 21-46.9 46.8c.1 25.8 21.1 46.8 46.9 46.8z" />
+                    </svg>
+                    Присоединиться                </a>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+<div class="popup_modal" id="popupContacts">
+    <div class="popup_modal_content no-close no-scrollbar">
+        <div class="popup_modal_head">
+            Контактная информация            <span class="popup_modal_close">
+                <svg viewBox="0 0 320 512">
+                    <path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"></path>
+                </svg>
+            </span>
+        </div>
+        <hr>
+        <div class="contact_body">
+            <span>По вопросам сотрудничества: <a class="contact_mail" href="mailto:&body=Приветствую?subject=У меня есть вопрос">Скрыто</a></span>
+            <hr>
+            <span>Мы в социальных сетях</span>
+            <div class="social_buttons">
+                                    <a href="https://vk.com/moonproject.anime" target="_blank" data-tippy-content="VK" data-tippy-placement="top">
+                        <div class="social_but">
+                            <svg viewBox="0 0 448 512">
+                                <path d="M31.4907 63.4907C0 94.9813 0 145.671 0 247.04V264.96C0 366.329 0 417.019 31.4907 448.509C62.9813 480 113.671 480 215.04 480H232.96C334.329 480 385.019 480 416.509 448.509C448 417.019 448 366.329 448 264.96V247.04C448 145.671 448 94.9813 416.509 63.4907C385.019 32 334.329 32 232.96 32H215.04C113.671 32 62.9813 32 31.4907 63.4907ZM75.6 168.267H126.747C128.427 253.76 166.133 289.973 196 297.44V168.267H244.16V242C273.653 238.827 304.64 205.227 315.093 168.267H363.253C359.313 187.435 351.46 205.583 340.186 221.579C328.913 237.574 314.461 251.071 297.733 261.227C316.41 270.499 332.907 283.63 346.132 299.751C359.357 315.873 369.01 334.618 374.453 354.747H321.44C316.555 337.262 306.614 321.61 292.865 309.754C279.117 297.899 262.173 290.368 244.16 288.107V354.747H238.373C136.267 354.747 78.0267 284.747 75.6 168.267Z" />
+                            </svg>
+                        </div>
+                    </a>
+                                                    <a href="https://t.me/moonprojectcs2" target="_blank" data-tippy-content="Telegram" data-tippy-placement="top">
+                        <div class="social_but">
+                            <svg x="0" y="0" viewBox="0 0 100 100" xml:space="preserve">
+                                <g>
+                                    <path d="M89.442 11.418c-12.533 5.19-66.27 27.449-81.118 33.516-9.958 3.886-4.129 7.529-4.129 7.529s8.5 2.914 15.786 5.1 11.172-.243 11.172-.243l34.244-23.073c12.143-8.257 9.229-1.457 6.315 1.457-6.315 6.315-16.758 16.272-25.501 24.287-3.886 3.4-1.943 6.315-.243 7.772 6.315 5.343 23.558 16.272 24.53 17.001 5.131 3.632 15.223 8.861 16.758-2.186l6.072-38.13c1.943-12.872 3.886-24.773 4.129-28.173.728-8.257-8.015-4.857-8.015-4.857z"></path>
+                                </g>
+                            </svg>
+                        </div>
+                    </a>
+                                                                    <a href="https://discord.gg/qkRXKheHde" target="_blank" data-tippy-content="Discord" data-tippy-placement="top">
+                        <div class="social_but">
+                            <svg viewBox="0 0 640 512">
+                                <path d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z" />
+                            </svg>
+                        </div>
+                    </a>
+                                                                    <a href="https://www.tiktok.com/@moonprojectcs2?lang=ru-RU" target="_blank" data-tippy-content="Tik Tok" data-tippy-placement="top">
+                        <div class="social_but">
+                            <svg viewBox="0 0 448 512">
+                                <path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" />
+                            </svg>
+                        </div>
+                    </a>
+                            </div>
+            <hr>
+                            <div onclick="location.href='https://vk.com/baki111'" class="secondary_btn w100">Голубиная связь</div>
+                    </div>
+    </div>
+</div>
+<footer class="footer-container">
+    <div class="container-footer">
+        <div class="footer-block">
+            <div class="footer_logolinks">
+                <div class="footer_namepay">
+                    <a class="footer_name" href="/">
+                        MOON                    </a>
+                    <div class="footer_text">
+                        <div class="email_footer">По вопросам сотрудничества:  Я Дима, будем сотрудничеть?)</div>
+                        <b class="copyrightsite">MOON © 2024 - 2025</b>
+                    </div>
+                </div>
+                <div class="footer_links">
+                    <a href="/oferta/">Договор оферты</a>
+                    <a data-openmodal="popupContacts">Контакты</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+<script src="/storage/assets/js/vendors/jquery/jquery-3.5.1.min.js"></script>
+<script src="/storage/assets/js/vendors/jquery/jquery-ui.min.js"></script>
+    <script src="/app/templates/neo/assets/js/swiper-bundle.min.js"></script>
+    <script> const chat_notified = 'Вас упомянули в чате, ответьте пожалуйста', chat_msg_time = 'Отправить сообщение через'; </script>
+    <script defer src="//cs2-moon.ru/app/modules/module_block_main_chat/assets/js/chat.js?1745186941"></script>
+<script src="/app/templates/neo/assets/js/popper.min.js"></script>
+<script src="/app/templates/neo/assets/js/iziToast.min.js"></script>
+<script src="/app/templates/neo/assets/js/clipboard.min.js"></script>
+<script>
+    let domain = '//cs2-moon.ru/';
+</script>
+    <script src="/storage/assets/js/app.js?1745186941"></script>
+    <script src="/app/templates/neo/assets/js/app.js?1745186941"></script>
+    <script src="/app/modules/module_page_pay/assets/js/pay.js?1745186941"></script>
+        <script src="/app/modules/module_page_statistics/assets/js/1.js?1745186941"></script>
+            <script src="/app/modules/module_block_main_servers/assets/js/1.js?1745186941"></script>
+            <script src="/app/modules/module_block_main_chat/assets/js/1.js?1745186941"></script>
+            <script src="/app/modules/module_block_main_banner_slider/assets/js/1.js?1745186941"></script>
+    <!--<style>
+	#snowfall-container {
+		z-index: 1000;
+	}
+</style>
+<script class="js_script" src="/app/templates/neo/assets/js/snowfall.min.js"></script>
+<script class="js_script" defer>
+    $(document).snowfall({
+        collection : '',
+        flakeColor: "rgb(255 255 255/ 75%)",
+        minSize : 3,
+        maxSize : 7,
+        flakeCount : 20,
+        minSpeed: 1,
+        maxSpeed: 3,
+        round: true,
+    });
+</script>-->
 
-    <!-- Hero Section -->
-    <section class="hero">
-      <h1>CS2 Time Public</h1>
-      <p>Захватывающие игры и активное сообщество</p>
-      <div class="cta-buttons">
-        <a href="steam://connect/your-ip-here" class="btn main">Подключиться</a>
-        <a href="#discord" class="btn secondary">Наш Discord</a>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section dark">
-      <h2>О сервере</h2>
-      <p>Погрузитесь в мир CS2 с уникальными режимами и активной администрацией, обеспечивающей комфортное игровое пространство.</p>
-    </section>
-
-    <!-- Admins Section -->
-    <section id="admins" class="section">
-      <h2>Администрация</h2>
-      <ul>
-        <li><strong>Admin 1</strong> — Главный админ</li>
-        <li><strong>Admin 2</strong> — Модератор</li>
-        <li><strong>Admin 3</strong> — Разработчик</li>
-      </ul>
-    </section>
-
-    <!-- Connect Section -->
-    <section id="connect" class="section dark">
-      <h2>Как зайти</h2>
-      <p>Скопируйте IP или нажмите на кнопку для подключения:</p>
-      <p class="ip">IP: your-ip-here</p>
-      <a href="steam://connect/your-ip-here" class="btn main">Подключиться</a>
-    </section>
-
-    <!-- Discord Section -->
-    <section id="discord" class="section">
-      <h2>Наш Discord</h2>
-      <p>Присоединяйтесь к нашему сообществу, чтобы общаться с другими игроками и участвовать в мероприятиях!</p>
-      <a href="https://discord.gg/yourdiscordlink" target="_blank" class="btn secondary">Перейти в Discord</a>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-      <p>© 2025 Time Public CS2. Все права защищены.</p>
-    </footer>
-  </div>
-</body>
 </html>
