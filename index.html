@@ -1,93 +1,64 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CS 2 Паблик</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CS2 Time Public</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Шапка -->
-    <header>
-        <div class="logo">
-            <h1>CS 2 Паблик</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Новости</a></li>
-                <li><a href="#">Сервера</a></li>
-                <li><a href="#">Форум</a></li>
-                <li><a href="#">Контакты</a></li>
-            </ul>
-        </nav>
+  <div class="background-overlay"></div>
+  <div class="wrapper">
+    <header class="top-header">
+      <div class="logo">TIME PUBLIC</div>
+      <nav class="top-nav">
+        <a href="#about">О сервере</a>
+        <a href="#admins">Админы</a>
+        <a href="#connect">Играть</a>
+        <a href="#discord">Discord</a>
+      </nav>
     </header>
 
-    <!-- Герой-блок -->
     <section class="hero">
-        <div class="hero-content">
-            <h2>Добро пожаловать в мир CS 2!</h2>
-            <p>Присоединяйся к игре на наших серверах, участвуй в турнирах и будь частью сообщества!</p>
-            <a href="#" class="cta-btn">Начать игру</a>
-        </div>
+      <h1>CS2 Time Public</h1>
+      <p>Легендарный паблик с неоновой атмосферой и активным комьюнити</p>
+      <div class="cta-buttons">
+        <a href="steam://connect/123.456.78.90:27015" class="btn main">Подключиться</a>
+        <a href="#discord" class="btn secondary">Наш Discord</a>
+      </div>
     </section>
 
-    <!-- Особенности -->
-    <section class="features">
-        <h2>Наши особенности</h2>
-        <div class="feature">
-            <h3>Серверы</h3>
-            <p>Играй на наших серверах с различными режимами игры.</p>
-        </div>
-        <div class="feature">
-            <h3>Новости</h3>
-            <p>Будь в курсе всех обновлений и событий.</p>
-        </div>
-        <div class="feature">
-            <h3>Турниры</h3>
-            <p>Участвуй в турнирах и побеждай!</p>
-        </div>
+    <section id="about" class="section dark">
+      <h2>О сервере</h2>
+      <p>Уникальные режимы, частые ивенты, активные игроки и адекватная администрация. Здесь ты найдёшь своё место в мире CS2.</p>
     </section>
 
-    <!-- Секция с новостями -->
-    <section class="news">
-        <h2>Последние новости</h2>
-        <div class="news-item">
-            <h3>Обновление 1.0</h3>
-            <p>Новое обновление с новыми картами и режимами игры. Присоединяйтесь!</p>
-            <a href="#">Читать больше</a>
-        </div>
-        <div class="news-item">
-            <h3>Турнир "Викинги против мутантов"</h3>
-            <p>Скоро начнется турнир, регистрация открыта. Собери команду и побеждай!</p>
-            <a href="#">Читать больше</a>
-        </div>
+    <section id="admins" class="section">
+      <h2>Администрация</h2>
+      <ul>
+        <li><strong>Time | Sasha</strong> — Главный админ</li>
+        <li><strong>Time | Artem</strong> — Модератор</li>
+        <li><strong>Time | Fox</strong> — Разработчик</li>
+      </ul>
     </section>
 
-    <!-- Раздел с серверами -->
-    <section class="servers">
-        <h2>Наши сервера</h2>
-        <div class="server-list">
-            <div class="server">
-                <h3>Сервер 1: "Штурм базы"</h3>
-                <p>Играй в командном режиме, захватывай базу и побеждай!</p>
-                <a href="#">Подключиться</a>
-            </div>
-            <div class="server">
-                <h3>Сервер 2: "Война кланов"</h3>
-                <p>Соревнуйся с другими кланами в напряжённых матчах.</p>
-                <a href="#">Подключиться</a>
-            </div>
-        </div>
+    <section id="connect" class="section dark">
+      <h2>Как зайти</h2>
+      <p>Скопируй IP или нажми на кнопку:</p>
+      <p class="ip">IP: 123.456.78.90:27015</p>
+      <a href="steam://connect/123.456.78.90:27015" class="btn main">Подключиться к серверу</a>
     </section>
 
-    <!-- Футер -->
+    <section id="discord" class="section">
+      <h2>Наш Discord</h2>
+      <p>Присоединяйся к нашему сообществу и участвуй в розыгрышах, голосованиях и общении с командой!</p>
+      <a href="https://discord.gg/moonpublic" target="_blank" class="btn secondary">Перейти в Discord</a>
+    </section>
+
     <footer>
-        <div class="footer-content">
-            <p>&copy; 2025 CS 2 Паблик. Все права защищены.</p>
-            <p><a href="#">Политика конфиденциальности</a> | <a href="#">Условия использования</a></p>
-        </div>
+      <p>© 2025 Time Public CS2. Все права защищены.</p>
     </footer>
+  </div>
 </body>
 </html>
