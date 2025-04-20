@@ -1,89 +1,99 @@
 body {
-  background-color: #1d1f26;
-  color: #ffffff;
-  font-family: 'Orbitron', sans-serif;
-  margin: 0;
-  padding: 0;
+    background: url('https://example.com/space-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
 }
 
-.top-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: #111;
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
 }
 
-.logo {
-  font-size: 2em;
-  color: #00ff00;
+.logo h1 {
+    font-size: 2.5em;
+    color: #0fa3d1;
+    margin: 0;
 }
 
-.top-nav a {
-  color: #ffffff;
-  margin: 0 15px;
-  text-decoration: none;
-  position: relative;
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.2em;
 }
 
-.top-nav a::after {
-  content: '';
-  display: block;
-  width: 0;
-  height: 2px;
-  background: #00ff00;
-  transition: width .3s;
-}
-
-.top-nav a:hover::after {
-  width: 100%;
+.nav a:hover {
+    color: #0fa3d1;
 }
 
 .hero {
-  text-align: center;
-  padding: 100px 20px;
-  background-color: #222;
+    text-align: center;
+    padding: 150px 20px 50px;
+    background: rgba(0, 0, 0, 0.6);
 }
 
-.hero h1 {
-  font-size: 3em;
-  margin-bottom: 20px;
+.hero h2 {
+    font-size: 3em;
+    margin: 0;
 }
 
 .hero p {
-  font-size: 1.5em;
-  margin-bottom: 30px;
+    font-size: 1.5em;
 }
 
-.cta-buttons .btn {
-  display: inline-block;
-  padding: 15px 30px;
-  margin: 0 10px;
-  border-radius: 5px;
-  text-decoration: none;
-  color: #ffffff;
-  transition: background 0.3s;
+.cta-btn {
+    padding: 15px 30px;
+    background: #0fa3d1;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    border-radius: 5px;
 }
 
-.cta-buttons .main {
-  background-color: #00ff00;
+.about, .top-players, .admins {
+    padding: 50px 20px;
+    text-align: center;
 }
 
-.cta-buttons .main:hover {
-  background-color: #00cc00;
+.about-img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
 }
 
-.cta-buttons .secondary {
-  background-color: #333;
+.top-players .player-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
-.cta-buttons .secondary:hover {
-  background-color: #444;
+.player-card {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+}
+
+.player-card img {
+    max-width: 100%;
+    border-radius: 5px;
 }
 
 footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #111;
-  color: #888;
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
