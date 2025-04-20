@@ -10,12 +10,14 @@ body {
   background-color: #1d1f26;
   color: #ffffff;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  position: relative;
 }
 
 /* Фоновая overlay */
@@ -42,6 +44,12 @@ body {
   font-size: 2.5em;
   font-weight: bold;
   color: #00ff00;
+  animation: logo-fade 2s ease-in-out infinite alternate;
+}
+
+@keyframes logo-fade {
+  0% { opacity: 0.7; }
+  100% { opacity: 1; }
 }
 
 .top-nav a {
@@ -49,11 +57,36 @@ body {
   color: #ffffff;
   margin: 0 15px;
   font-size: 1.1em;
+  position: relative;
   transition: color 0.3s;
 }
 
 .top-nav a:hover {
   color: #00ff00;
+}
+
+.nav-link {
+  padding: 10px 15px;
+  display: inline-block;
+  position: relative;
+}
+
+.nav-link:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #00ff00;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.nav-link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 /* Hero Section */
@@ -66,11 +99,13 @@ body {
 .hero h1 {
   font-size: 3em;
   margin-bottom: 20px;
+  animation: hero-appear 2s ease-in-out;
 }
 
 .hero p {
   font-size: 1.5em;
   margin-bottom: 30px;
+  animation: hero-text 2.5s ease-in-out;
 }
 
 .cta-buttons a {
@@ -82,10 +117,13 @@ body {
   margin: 0 10px;
   border-radius: 5px;
   transition: background 0.3s;
+  display: inline-block;
+  position: relative;
 }
 
 .cta-buttons a:hover {
   background: #00cc00;
+  animation: button-hover 0.5s ease-in-out;
 }
 
 .cta-buttons .secondary {
@@ -96,19 +134,23 @@ body {
   background: #444;
 }
 
+@keyframes button-hover {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.05); }
+}
+
 /* Секции */
 .section {
   padding: 60px 0;
+  text-align: center;
 }
 
 .section h2 {
-  text-align: center;
   font-size: 2.5em;
   margin-bottom: 20px;
 }
 
 .section p {
-  text-align: center;
   font-size: 1.2em;
 }
 
@@ -126,7 +168,7 @@ body {
   margin: 10px 0;
 }
 
-/* Кнопки для подключения и Discord */
+/* Кнопки */
 .btn {
   display: inline-block;
   text-decoration: none;
@@ -143,14 +185,6 @@ body {
   background: #00cc00;
 }
 
-.btn.secondary {
-  background: #333;
-}
-
-.btn.secondary:hover {
-  background: #444;
-}
-
 /* Footer */
 footer {
   text-align: center;
@@ -161,4 +195,15 @@ footer {
 
 footer p {
   font-size: 1em;
+}
+
+/* Анимации */
+@keyframes hero-appear {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes hero-text {
+  0% { transform: translateY(20px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
 }
