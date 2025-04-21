@@ -1,74 +1,96 @@
 /* Общие стили */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background: url('https://example.com/space-background.jpg') no-repeat center center fixed;
-    background-size: cover;
-    color: #fff;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  background: url('https://images.unsplash.com/photo-1581320549415-4170a6c94f57?auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  padding: 0;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .logo-container img {
-    width: 150px;
+  width: 150px;
+  max-width: 100%;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
 }
 
 nav ul li {
-    margin: 0 20px;
+  margin: 10px;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 18px;
-    transition: color 0.3s;
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #00ffcc;
+  color: #00ffcc;
 }
 
-/* Секции */
 .welcome {
-    text-align: center;
-    margin-top: 50px;
+  text-align: center;
+  padding: 50px 20px;
 }
 
 .welcome h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
+  font-size: 38px;
+  margin-bottom: 20px;
 }
 
-.top-players, .admins {
-    margin: 50px 0;
-    text-align: center;
+.top-players,
+.admins {
+  padding: 40px 20px;
+  text-align: center;
 }
 
-.top-players h2, .admins h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
+.top-players h2,
+.admins h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
 }
 
-/* Футер */
 footer {
-    text-align: center;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .welcome h1 {
+    font-size: 28px;
+  }
+
+  .top-players h2,
+  .admins h2 {
+    font-size: 24px;
+  }
 }
