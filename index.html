@@ -1,45 +1,57 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Time Public</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Time Public</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <div class="logo-container">
-            <img src="logo.png" alt="Time Public Logo" class="logo">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Топ игроки</a></li>
-                <li><a href="#">О сервере</a></li>
-                <li><a href="#">Подключиться</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="welcome">
-            <h1>Добро пожаловать в Time Public</h1>
-            <p>Играйте с лучшими игроками на нашем сервере!</p>
-        </section>
-        <section class="top-players">
-            <h2>Топ Игроки</h2>
-            <div class="players-list">
-                <!-- Здесь будут отображаться игроки -->
-            </div>
-        </section>
-        <section class="admins">
-            <h2>Администраторы</h2>
-            <div class="admins-list">
-                <!-- Список администраторов -->
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Time Public. Все права защищены.</p>
-    </footer>
+  <header>
+    <div class="logo-container">
+      <img src="logo.png" alt="Time Public Logo" class="logo" />
+    </div>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav id="mobile-menu">
+      <ul>
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Топ игроки</a></li>
+        <li><a href="#">О сервере</a></li>
+        <li><a href="#">Подключиться</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="welcome">
+      <h1>Добро пожаловать в Time Public</h1>
+      <p>Играйте с лучшими игроками на нашем сервере!</p>
+    </section>
+
+    <section class="top-players">
+      <h2>Топ Игроки</h2>
+      <div class="players-list">
+        <!-- Здесь будут игроки -->
+      </div>
+    </section>
+
+    <section class="admins">
+      <h2>Администраторы</h2>
+      <div class="admins-list">
+        <!-- Здесь будут админы -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Time Public. Все права защищены.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('active');
+    }
+  </script>
 </body>
 </html>
