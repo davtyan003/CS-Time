@@ -1,56 +1,55 @@
 body {
   margin: 0;
   font-family: 'Orbitron', sans-serif;
-  background: url('https://images.unsplash.com/photo-1447433819943-74a20887a3b5?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+  background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
   background-size: cover;
   color: white;
-  scroll-behavior: smooth;
 }
 
 header {
+  background: rgba(0, 0, 0, 0.85);
+  padding: 20px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(0, 0, 0, 0.7);
-  padding: 20px 40px;
   position: fixed;
   width: 100%;
-  top: 0;
   z-index: 1000;
 }
 
 .logo {
   font-size: 28px;
   font-weight: bold;
-  color: #0ff;
+  color: #00ffff;
   text-shadow: 0 0 10px #0ff;
 }
 
 nav a {
-  color: white;
   margin: 0 15px;
   text-decoration: none;
+  color: white;
   font-weight: bold;
-  transition: color 0.3s ease;
+  transition: 0.3s;
 }
 
 nav a:hover {
-  color: #0ff;
+  color: #00ffff;
 }
 
 .hero {
+  padding: 180px 20px 100px;
   text-align: center;
-  padding: 160px 20px 80px;
   background: rgba(0, 0, 0, 0.5);
 }
 
 .hero h1 {
-  font-size: 3em;
+  font-size: 3.2em;
+  color: #fff;
+  text-shadow: 0 0 15px #0ff;
 }
 
-.highlight {
-  color: #0ff;
-  text-shadow: 0 0 20px #0ff;
+.hero h1 span {
+  color: #00ffff;
 }
 
 .hero p {
@@ -62,18 +61,18 @@ nav a:hover {
   display: inline-block;
   padding: 12px 25px;
   margin: 10px;
-  background: #0ff;
-  color: #000;
-  font-weight: bold;
+  background: #00ffff;
+  color: black;
   border-radius: 6px;
+  font-weight: bold;
   text-decoration: none;
-  box-shadow: 0 0 15px #0ff;
-  transition: 0.3s ease;
+  box-shadow: 0 0 15px #00ffff;
+  transition: 0.3s;
 }
 
 .btn:hover {
-  background: #00d4ff;
-  box-shadow: 0 0 25px #00d4ff;
+  background: #00d0ff;
+  box-shadow: 0 0 25px #00d0ff;
 }
 
 .btn.discord {
@@ -83,22 +82,26 @@ nav a:hover {
 
 .section {
   padding: 80px 20px;
-  background: rgba(0, 0, 0, 0.6);
   text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.section.dark {
+  background: rgba(0, 0, 0, 0.8);
 }
 
 .cards {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 30px;
+  flex-wrap: wrap;
   margin-top: 30px;
 }
 
 .card {
-  background: rgba(255, 255, 255, 0.05);
-  padding: 20px;
+  background: rgba(255, 255, 255, 0.08);
   border-radius: 10px;
+  padding: 20px;
   width: 220px;
   box-shadow: 0 0 10px #0ff;
   transition: transform 0.3s ease;
@@ -110,7 +113,7 @@ nav a:hover {
 
 .card img {
   width: 100%;
-  border-radius: 5px;
+  border-radius: 6px;
   margin-bottom: 10px;
 }
 
@@ -121,7 +124,7 @@ nav a:hover {
 }
 
 footer {
+  background: rgba(0, 0, 0, 0.85);
   text-align: center;
   padding: 20px;
-  background: rgba(0, 0, 0, 0.8);
 }
