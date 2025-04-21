@@ -1,68 +1,45 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Time Public CS2</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Public</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <header>
-    <div class="logo">Time Public</div>
-    <nav>
-      <a href="#about">О сервере</a>
-      <a href="#players">Игроки</a>
-      <a href="#admins">Админы</a>
-      <a href="#connect">Подключение</a>
-    </nav>
-  </header>
-
-  <section class="hero">
-    <h1>Добро пожаловать в <span>Time Public</span></h1>
-    <p>Легендарный паблик по CS2 с космической атмосферой</p>
-    <a href="#connect" class="btn">Играть сейчас</a>
-  </section>
-
-  <section id="about" class="section">
-    <h2>О сервере</h2>
-    <p>Time Public — космический паблик по CS2, созданный для настоящих фанатов. Чистая игра, лучшие игроки и активные админы ждут тебя!</p>
-  </section>
-
-  <section id="players" class="section dark">
-    <h2>Топ игроки</h2>
-    <div class="cards">
-      <div class="card">
-        <img src="https://i.imgur.com/Z6x8rCs.png" alt="Игрок 1">
-        <h3>PlayerOne</h3>
-        <p>Очки: 2340</p>
-      </div>
-      <div class="card">
-        <img src="https://i.imgur.com/WzXklZy.png" alt="Игрок 2">
-        <h3>SharpShooter</h3>
-        <p>Очки: 2280</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="admins" class="section">
-    <h2>Администраторы</h2>
-    <ul class="admin-list">
-      <li>Админ001 — Основатель</li>
-      <li>SkyMaster — Главный Админ</li>
-    </ul>
-  </section>
-
-  <section id="connect" class="section dark">
-    <h2>Подключиться</h2>
-    <a href="steam://connect/127.0.0.1:27015" class="btn">Подключиться через Steam</a>
-    <a href="https://discord.gg/your-discord-link" class="btn discord">Наш Discord</a>
-  </section>
-
-  <footer>
-    <p>© 2025 Time Public | Все права защищены</p>
-  </footer>
-
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Time Public Logo" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Топ игроки</a></li>
+                <li><a href="#">О сервере</a></li>
+                <li><a href="#">Подключиться</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="welcome">
+            <h1>Добро пожаловать в Time Public</h1>
+            <p>Играйте с лучшими игроками на нашем сервере!</p>
+        </section>
+        <section class="top-players">
+            <h2>Топ Игроки</h2>
+            <div class="players-list">
+                <!-- Здесь будут отображаться игроки -->
+            </div>
+        </section>
+        <section class="admins">
+            <h2>Администраторы</h2>
+            <div class="admins-list">
+                <!-- Список администраторов -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Time Public. Все права защищены.</p>
+    </footer>
 </body>
 </html>
