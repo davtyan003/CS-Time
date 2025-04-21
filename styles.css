@@ -1,99 +1,35 @@
 body {
-    background: url('https://example.com/space-background.jpg') no-repeat center center fixed;
-    background-size: cover;
-    font-family: 'Orbitron', sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #fff;
+  margin: 0;
+  padding: 0;
+  background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Orbitron', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.7);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 100;
+.welcome-container {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 40px 60px;
+  border-radius: 15px;
+  text-align: center;
+  animation: fadeIn 2s ease-in-out;
 }
 
-.logo h1 {
-    font-size: 2.5em;
-    color: #0fa3d1;
-    margin: 0;
+.welcome-text {
+  font-size: 2.8em;
+  text-shadow: 0 0 20px #0ff;
 }
 
-.nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px;
-    font-size: 1.2em;
+.highlight {
+  color: #0ff;
+  text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
 }
 
-.nav a:hover {
-    color: #0fa3d1;
-}
-
-.hero {
-    text-align: center;
-    padding: 150px 20px 50px;
-    background: rgba(0, 0, 0, 0.6);
-}
-
-.hero h2 {
-    font-size: 3em;
-    margin: 0;
-}
-
-.hero p {
-    font-size: 1.5em;
-}
-
-.cta-btn {
-    padding: 15px 30px;
-    background: #0fa3d1;
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.5em;
-    border-radius: 5px;
-}
-
-.about, .top-players, .admins {
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.about-img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px;
-}
-
-.top-players .player-list {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.player-card {
-    background: rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    border-radius: 10px;
-    width: 250px;
-    text-align: center;
-}
-
-.player-card img {
-    max-width: 100%;
-    border-radius: 5px;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.7);
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
