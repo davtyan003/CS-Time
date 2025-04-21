@@ -1,4 +1,4 @@
-/* Общие стили */
+/* Сброс и базовые стили */
 * {
   margin: 0;
   padding: 0;
@@ -6,45 +6,42 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background: url('https://images.unsplash.com/photo-1581320549415-4170a6c94f57?auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
-  background-size: cover;
+  background-color: #000;
   color: #fff;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  min-height: 100vh;
 }
 
-/* Шапка */
+/* Хедер */
 header {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background: rgba(0, 0, 0, 0.7);
-  position: relative;
+  background: #111;
 }
 
 .logo {
-  width: 150px;
-  max-width: 100%;
+  font-size: 28px;
+  font-weight: bold;
+  color: #00ffcc;
 }
 
 /* Меню */
 nav ul {
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 nav ul li {
-  margin: 0 15px;
+  margin-left: 20px;
 }
 
 nav ul li a {
-  text-decoration: none;
   color: #fff;
+  text-decoration: none;
   font-size: 18px;
-  transition: color 0.3s;
 }
 
 nav ul li a:hover {
@@ -54,45 +51,37 @@ nav ul li a:hover {
 /* Приветствие */
 .welcome {
   text-align: center;
-  padding: 60px 20px;
+  padding: 80px 20px;
 }
 
 .welcome h1 {
-  font-size: 42px;
-  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+.highlight {
+  color: #00ffcc;
 }
 
 .welcome p {
+  margin-top: 10px;
   font-size: 20px;
-}
-
-/* Секции */
-.top-players,
-.admins {
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.top-players h2,
-.admins h2 {
-  font-size: 32px;
-  margin-bottom: 20px;
 }
 
 /* Футер */
 footer {
   text-align: center;
   padding: 20px;
-  background: rgba(0, 0, 0, 0.7);
+  background: #111;
+  margin-top: 40px;
 }
 
-/* Гамбургер-меню */
+/* Гамбургер */
 .menu-toggle {
   display: none;
-  font-size: 32px;
-  color: white;
+  font-size: 30px;
   background: none;
   border: none;
+  color: white;
   cursor: pointer;
 }
 
@@ -100,37 +89,24 @@ footer {
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
-    position: absolute;
-    top: 25px;
-    right: 25px;
-    z-index: 1000;
+  }
+
+  nav {
+    display: none;
+    width: 100%;
+    background: #111;
+  }
+
+  nav.active {
+    display: block;
   }
 
   nav ul {
-    display: none;
     flex-direction: column;
-    background: rgba(0, 0, 0, 0.85);
-    position: absolute;
-    top: 70px;
-    right: 0;
-    width: 100%;
     text-align: center;
-  }
-
-  nav.active ul {
-    display: flex;
   }
 
   nav ul li {
     margin: 15px 0;
-  }
-
-  .welcome h1 {
-    font-size: 28px;
-  }
-
-  .top-players h2,
-  .admins h2 {
-    font-size: 24px;
   }
 }
